@@ -1,0 +1,531 @@
+/*=============================================
+=            Button-1            =
+=============================================*/
+.btn-1 {
+  display: inline-block;
+  padding: calc(var(--vce-pxs) + 0.5rem) var(--vce-pmd);
+  text-transform: capitalize;
+  font-weight: var(--vce-fw-xl);
+  font-size: var(--vce-fs-btn);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--vce-clr-primary-top);
+  position: relative;
+  z-index: 0;
+}
+.btn-1:focus {
+  outline: 0;
+}
+.btn-1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate(-0.8rem, -0.8rem);
+  z-index: -1;
+  background: var(--vce-clr-secondary-surface);
+  opacity: 0.9;
+  transition: all var(--vce-animation-time-sm);
+}
+.btn-1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border: 3px solid var(--vce-clr-primary-surface);
+}
+.btn-1:is(:hover, :focus)::before {
+  transform: translate(0, 0);
+}
+/*=============================================
+=            Button-2            =
+=============================================*/
+.btn-2 {
+  display: inline-block;
+  padding: calc(var(--vce-pxs) + 0.5rem) var(--vce-pmd);
+  text-transform: capitalize;
+  font-weight: var(--vce-fw-xl);
+  font-size: var(--vce-fs-btn);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--vce-clr-primary-top);
+  position: relative;
+  z-index: 0;
+}
+.btn-2:focus {
+  outline: 0;
+}
+
+.btn-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate(-0.8rem, -0.8rem);
+  z-index: var(--vce-z-behind);
+  background: var(--vce-clr-secondary-surface);
+  opacity: 0.9;
+  transition: all var(--vce-animation-time-sm);
+  mix-blend-mode: multiply;
+}
+.btn-2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate(0.8rem, 0.8rem);
+  z-index: -2;
+  background: var(--vce-clr-tertiary-surface);
+  opacity: 0.7;
+  transition: all var(--vce-animation-time-sm);
+}
+.btn-2:is(:hover, :focus)::before,
+.btn-2:is(:hover, :focus)::after {
+  transform: translate(0, 0);
+}
+.btn-2 > span.border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 3px solid var(--vce-clr-primary-surface);
+  width: 100%;
+  height: 100%;
+}
+
+/*=============================================
+=            Button-3            =
+=============================================*/
+.btn-3 {
+  --border-size: 3px;
+  display: inline-block;
+  padding: calc(var(--vce-pxs) + 0.5rem) var(--vce-pmd);
+  text-transform: capitalize;
+  font-weight: var(--vce-fw-xl);
+  font-size: var(--vce-fs-btn);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--vce-clr-primary-surface);
+  border: var(--border-size) solid var(--vce-clr-primary-surface);
+  transition: color var(--vce-animation-time-sm);
+  position: relative;
+  z-index: var(--vce-z-base);
+}
+
+.btn-3::before {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--border-size));
+  left: calc(-1 * var(--border-size));
+  transform: scale(0);
+  height: calc(100% + calc(2 * var(--border-size)));
+  width: calc(100% + calc(2 * var(--border-size)));
+  z-index: var(--vce-z-behind);
+  background: var(--vce-clr-primary-surface);
+}
+
+.btn-3:is(:hover, :focus)::before {
+  animation: btn-3-scale-background var(--vce-animation-time-sm) forwards;
+}
+.btn-3:is(:hover, :focus) {
+  color: var(--vce-clr-primary-top);
+  outline: 0;
+}
+@keyframes btn-3-scale-background {
+  50% {
+    transform: scale(1, 0.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+/*=============================================
+=            Button-4            =
+=============================================*/
+.btn-4 {
+  --border-size: 3px;
+  display: inline-block;
+  padding: calc(var(--vce-pxs) + 0.5rem) var(--vce-pmd);
+  text-transform: capitalize;
+  font-weight: var(--vce-fw-xl);
+  font-size: var(--vce-fs-btn);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--vce-clr-primary-surface);
+  border: var(--border-size) solid var(--vce-clr-primary-surface);
+  transition: color var(--vce-animation-time-sm);
+  position: relative;
+  z-index: var(--vce-z-base);
+}
+
+.btn-4::before {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--border-size));
+  left: calc(-1 * var(--border-size));
+  height: calc(100% + calc(2 * var(--border-size)));
+  width: 0;
+  z-index: var(--vce-z-behind);
+  background: var(--vce-clr-primary-surface);
+  transition: width var(--vce-animation-time-sm);
+}
+
+.btn-4:is(:hover, :focus)::before {
+  width: calc(100% + calc(2 * var(--border-size)));
+}
+.btn-4:is(:hover, :focus) {
+  color: var(--vce-clr-primary-top);
+  outline: 0;
+}
+/*=============================================
+=            Button-5            =
+=============================================*/
+.btn-5 {
+  display: inline-block;
+  padding: calc(var(--vce-pxs) + 0.5rem) var(--vce-pmd);
+  text-transform: capitalize;
+  font-weight: var(--vce-fw-xl);
+  font-size: var(--vce-fs-btn);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--vce-clr-primary-surface);
+  border: 3px solid var(--vce-clr-primary-surface);
+  transition: border-left var(--vce-animation-time-sm),
+    border-bottom calc(var(--vce-animation-time-sm) * 2),
+    border-right calc(var(--vce-animation-time-sm) * 3),
+    border-top calc(var(--vce-animation-time-sm) * 4);
+}
+
+.btn-5:is(:hover, :focus) {
+  color: var(--vce-clr-tertiary-surface);
+  border-color: var(--vce-clr-tertiary-surface);
+  outline: 0;
+}
+/*=============================================
+=            Button-6            =
+=============================================*/
+.btn-6 {
+  --border-size: 3px;
+  display: inline-block;
+  padding: calc(var(--vce-pxs) + 0.5rem) var(--vce-pmd);
+  text-transform: capitalize;
+  font-weight: var(--vce-fw-xl);
+  font-size: var(--vce-fs-btn);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--vce-clr-primary-surface);
+  border: var(--border-size) solid var(--vce-clr-primary-surface);
+  transition: color var(--vce-animation-time-sm);
+  position: relative;
+  z-index: var(--vce-z-base);
+}
+.btn-6:is(:hover, :focus) {
+  color: var(--vce-clr-primary-top);
+  outline: 0;
+}
+.btn-6::before {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--border-size));
+  left: calc(-1 * var(--border-size));
+  transform: scale(0) rotateZ(30deg);
+  transform-origin: left bottom;
+  height: calc(100% + calc(2 * var(--border-size)));
+  width: calc(100% + calc(2 * var(--border-size)));
+  z-index: var(--vce-z-behind);
+  background: var(--vce-clr-primary-surface);
+  transition: transform var(--vce-animation-time-sm);
+}
+.btn-6:is(:hover, :focus)::before {
+  transform: scale(1) rotateZ(0deg);
+}
+/*=============================================
+=            Button-7            =
+=============================================*/
+.btn-7 {
+  display: inline-block;
+  padding: calc(var(--vce-pxs) + 0.5rem) var(--vce-pmd);
+  text-transform: capitalize;
+  font-weight: var(--vce-fw-xl);
+  font-size: var(--vce-fs-btn);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--vce-clr-primary-surface);
+  border: 3px solid var(--vce-clr-primary-surface);
+  transition: color var(--vce-animation-time-sm);
+  position: relative;
+  z-index: var(--vce-z-base);
+  overflow: hidden;
+}
+
+.btn-7:is(:hover, :focus) {
+  color: var(--vce-clr-primary-top);
+  outline: 0;
+}
+.btn-7::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150%;
+  aspect-ratio: 1/1;
+  clip-path: circle(50%);
+  transform: scale(0) translate(-10%, 50%);
+  z-index: var(--vce-z-behind);
+  background: var(--vce-clr-primary-surface);
+  transform-origin: left bottom;
+  transition: transform var(--vce-animation-time-sm);
+}
+.btn-7:is(:hover, :focus)::before {
+  transform: scale(1) translate(-10%, 50%);
+}
+
+/*=============================================
+=            Button-8            =
+=============================================*/
+.btn-8 {
+  display: inline-block;
+  padding: calc(var(--vce-pxs) + 0.5rem) var(--vce-pmd);
+  text-transform: capitalize;
+  font-weight: var(--vce-fw-xl);
+  font-size: var(--vce-fs-btn);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--vce-clr-primary-surface);
+  border: 3px solid var(--vce-clr-primary-surface);
+  transition: color var(--vce-animation-time-sm);
+  position: relative;
+  z-index: var(--vce-z-base);
+}
+
+.btn-8:is(:hover, :focus) {
+  box-shadow: 0 0 0.5rem 0 var(--vce-clr-primary-surface);
+  outline: 0;
+}
+.btn-8::before {
+  content: "";
+  position: absolute;
+  top: -12.5%;
+  left: -5%;
+  height: 125%;
+  width: 110%;
+  border: 3px solid var(--vce-clr-primary-surface);
+  z-index: var(--vce-z-behind);
+  opacity: 0;
+}
+.btn-8::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -7.5%;
+  height: 140%;
+  width: 115%;
+  border: 3px solid var(--vce-clr-primary-surface);
+  z-index: -2;
+  opacity: 0;
+}
+.btn-8:is(:hover, :focus)::before,
+.btn-8:is(:hover, :focus)::after {
+  animation: btn-8-glow var(--vce-animation-time-sm) infinite;
+}
+@keyframes btn-8-glow {
+  0% {
+    opacity: 0.3;
+    filter: blur(0.7px);
+  }
+  20% {
+    opacity: 0.5;
+    filter: blur(1px);
+  }
+  50% {
+    opacity: 0.3;
+    filter: blur(blur(10.8536px));
+  }
+  100% {
+    opacity: 1;
+    filter: blur(32.5608px);
+  }
+}
+
+/*=============================================
+=            Button-9            =
+=============================================*/
+.btn-9 {
+  display: inline-block;
+  padding: calc(var(--vce-pxs) + 0.5rem) var(--vce-pmd);
+  text-transform: capitalize;
+  font-weight: var(--vce-fw-xl);
+  font-size: var(--vce-fs-btn);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--vce-clr-primary-top);
+  background: linear-gradient(
+    180deg,
+    hsl(203, 89%, 18%) 0%,
+    hsl(203, 89%, 39%) 100%
+  );
+  box-shadow: 7.22542e-16px 11.8px 23.6px hsla(202, 87%, 6%, 0.643),
+    inset -4.0944e-16px -6.68667px 6.68667px hsl(203, 90%, 15%),
+    inset 4.0944e-16px 6.68667px 6.68667px hsl(203, 89%, 42%);
+}
+
+/*=============================================
+=            Button-10            =
+=============================================*/
+.btn-10 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: calc(var(--vce-pxs) + 0.5rem) var(--vce-pmd);
+  text-transform: capitalize;
+  font-weight: var(--vce-fw-xl);
+  font-size: var(--vce-fs-btn);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  background: var(--vce-clr-primary-surface);
+  color: var(--vce-clr-primary-top);
+}
+
+.btn-10 > svg {
+  transform: translateX(-20rem);
+  height: 0;
+  width: 0;
+  transition: transform var(--vce-animation-time-sm)
+    cubic-bezier(0.44, 1.29, 1, 1.05);
+}
+.btn-10:is(:hover, :focus) > svg {
+  transform: translateX(0);
+  height: var(--vce-fs-btn);
+  width: var(--vce-fs-btn);
+  margin-inline-start: var(--vce-msm);
+}
+.btn-10:focus {
+  outline: 0;
+}
+/*=============================================
+=            Button-11            =
+=============================================*/
+.btn-11 {
+  display: inline-block;
+  padding: calc(var(--vce-pxs) + 0.5rem) var(--vce-pmd);
+  text-transform: capitalize;
+  font-weight: var(--vce-fw-xl);
+  font-size: var(--vce-fs-btn);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  border: 0.7375px solid var(--vce-clr-primary-top);
+  box-sizing: border-box;
+  filter: blur(0.245833px);
+  position: relative;
+  background: transparent;
+  color: var(--vce-clr-primary-surface);
+}
+
+.btn-11::before,
+.btn-11::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.btn-11::before {
+  border: 1.475px solid var(--vce-clr-tertiary-surface);
+  filter: blur(0.36875px);
+}
+.btn-11::after {
+  mix-blend-mode: hard-light;
+  border: 2.39687px solid hsla(198, 100%, 50%, 0.2);
+  box-shadow: inset -0.239688px 0.479375px 0.239688px hsla(0, 0%, 100%, 0.5);
+  filter: drop-shadow(0px 4.18531px 5.44091px hsl(216, 100%, 50%))
+    drop-shadow(0px 2.39687px 1.84375px hsla(203, 100%, 4%, 0.7));
+}
+.btn-11__shades {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: hard-light;
+  border: 3.13438px solid hsl(205, 100%, 50%);
+  filter: blur(4.18531px);
+}
+.btn-11__shades::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: hard-light;
+  border: 2.39687px solid hsl(205, 100%, 50%);
+  filter: blur(12.5559px);
+}
+.btn-11__shades::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate(-10%, -40%);
+  width: 120%;
+  aspect-ratio: 1/1;
+  border-radius: var(--vce-border-radius-circle);
+  background: hsla(209, 100%, 54%, 0.227);
+  mix-blend-mode: hard-light;
+  filter: blur(12.5559px);
+  opacity: 0.7;
+}
+/*=============================================
+=            Button-12            =
+=============================================*/
+.btn-12 {
+  display: inline-block;
+  padding: calc(var(--vce-pxs) + 0.5rem) var(--vce-pmd);
+  text-transform: capitalize;
+  font-weight: var(--vce-fw-xl);
+  font-size: var(--vce-fs-btn);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  background: var(--vce-clr-primary-surface);
+  color: var(--vce-clr-primary-top);
+  box-shadow: 0 0 0 0.2em var(--vce-clr-secondary-surface);
+  transition: box-shadow var(--vce-animation-time-xs);
+  position: relative;
+  z-index: var(--vce-z-base);
+}
+
+.btn-12:is(:hover, :focus) {
+  box-shadow: 0 0 0 0.15em var(--vce-clr-secondary-surface);
+  outline: 0;
+}
+.btn-12:active {
+  box-shadow: 0 0 0 0 var(--vce-clr-secondary-surface);
+}
+/*=============================================
+=            Button-13            =
+=============================================*/
+.btn-13 {
+  display: inline-block;
+  padding: calc(var(--vce-pxs) + 0.5rem) var(--vce-pmd);
+  text-transform: capitalize;
+  font-weight: var(--vce-fw-xl);
+  font-size: var(--vce-fs-btn);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    var(--vce-clr-primary-surface),
+    var(--vce-clr-secondary-surface),
+    var(--vce-clr-tertiary-surface)
+  );
+  background-size: 200% 200%;
+  background-position: -100% -100%;
+  color: var(--vce-clr-primary-surface);
+  transition: all var(--vce-animation-time-sm);
+}
+
+.btn-13:is(:hover, :focus) {
+  background-position: 0 0;
+  color: var(--vce-clr-primary-top);
+  outline: 0;
+}

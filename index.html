@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla CSS Elements</title>
+    <link rel="icon" href="./assets/icon-favicon.svg">
+    <link rel="stylesheet" href="mainstyle.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="checkboxes.css" />
+    <link rel="stylesheet" href="radios.css" />
+    <link rel="stylesheet" href="toggletokens.css" />
+    <link rel="stylesheet" href="switches.css" />
+    <link rel="stylesheet" href="inputs.css" />
+    <link rel="stylesheet" href="sliders.css" />
+    <link rel="stylesheet" href="spinners.css" />
+    <link href="prism.css" rel="stylesheet" />
+    
+
+  </head>
+  <body>
+    
+   <!---=============================================
+    =           header and navigation            =
+    =============================================-->
+    <header id="header">
+      <div class="header__container section-container">
+        <div class="header__logo">
+          <svg
+            width="221"
+            height="44"
+            viewBox="0 0 221 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M47.1389 37.2526C47.09 37.2309 42.252 35.0494 36.0203 31.0079C35.8167 30.6453 35.593 30.289 35.3421 29.9438C35.1568 29.6887 34.9583 29.4401 34.7476 29.1989C35.0598 29.1275 35.3664 29.0431 35.6662 28.9455C41.6158 27.0126 44.5331 20.1652 44.6543 19.8745C44.9314 19.2111 44.6825 18.4451 44.0684 18.0712C43.8342 17.9285 38.9605 15.0107 33.7753 15.5367C36.3777 12.1852 38.4585 8.74982 39.9863 5.27606C40.0001 5.24482 40.0129 5.213 40.0241 5.18079C40.9246 2.66651 40.8142 1.19671 39.6772 0.555047C38.2282 -0.262995 36.7543 1.05449 34.5404 3.77094C34.0328 4.39398 34.1261 5.31059 34.7494 5.81838C35.2572 6.23225 35.9601 6.24622 36.4772 5.90045C34.9634 8.92348 32.9953 11.9176 30.6004 14.8492C30.2884 8.85848 24.9983 4.24632 24.7666 4.04744C24.2212 3.57905 23.4155 3.57905 22.8703 4.04744C22.6439 4.24206 17.5901 8.65126 17.0681 14.442C14.822 11.6407 12.9657 8.78378 11.5217 5.90026C12.0392 6.24719 12.7422 6.23264 13.2502 5.81857C13.8732 5.31079 13.9667 4.39418 13.4591 3.77114C11.2458 1.05429 9.77175 -0.261637 8.32252 0.555047C7.18549 1.19691 7.07489 2.6667 7.97501 5.18098C7.98645 5.21319 7.99926 5.24501 8.01304 5.27625C9.54861 8.76709 11.642 12.2189 14.2626 15.5866C8.93062 14.8607 3.80913 17.9254 3.56891 18.0715C2.9548 18.4456 2.70586 19.2119 2.98294 19.8753C3.10421 20.1657 6.02226 27.013 11.9719 28.9457C12.2719 29.0433 12.5782 29.1277 12.8906 29.1991C12.6799 29.4403 12.4818 29.6887 12.2963 29.944C11.9633 30.4019 11.6758 30.8783 11.4253 31.3655C5.47761 35.1687 0.906982 37.2321 0.860608 37.2528C0.127359 37.5813 -0.200944 38.4421 0.127359 39.1755C0.369318 39.7159 0.900191 40.0366 1.45648 40.0366C1.65517 40.0366 1.85716 39.9957 2.05042 39.9093C2.21496 39.8356 5.46364 38.3711 10.1121 35.5981C9.57927 39.1883 10.3082 42.3654 10.3558 42.5658C10.5126 43.2263 11.1024 43.6854 11.7709 43.6854C11.8103 43.6854 11.85 43.6839 11.89 43.6808C12.2038 43.6551 19.617 42.996 23.2945 37.9343C23.4798 37.6793 23.6546 37.4141 23.8189 37.1391C23.9833 37.4141 24.1581 37.6791 24.3434 37.9343C28.0213 42.9964 35.4345 43.6551 35.7482 43.6808C36.4675 43.7366 37.1168 43.2653 37.2825 42.566C37.331 42.3609 38.0898 39.0457 37.4872 35.3581C42.3444 38.2845 45.776 39.8319 45.9497 39.9095C46.1428 39.9959 46.3448 40.0368 46.5436 40.0368C47.0995 40.0368 47.6306 39.7163 47.8728 39.1757C48.2011 38.4421 47.8726 37.5809 47.1389 37.2526ZM41.3719 19.9469C40.375 21.7518 38.142 25.0812 34.7672 26.1775C33.6855 26.5288 32.467 26.6505 31.1481 26.5393C30.4731 26.4852 29.8504 26.8973 29.6418 27.5398C29.593 27.6901 29.5708 27.844 29.5716 27.9957L29.2709 26.2428L32.6113 22.987C33.0079 22.6003 33.1505 22.0219 32.9794 21.4951C32.8083 20.9681 32.3529 20.5843 31.8045 20.5047L29.7367 20.2042C30.5845 19.5545 31.4656 19.0762 32.3645 18.7842C35.7238 17.693 39.5005 19.0753 41.3719 19.9469ZM26.2729 25.9809L26.6922 28.4265L24.4961 27.2718C24.284 27.1604 24.0516 27.1047 23.8189 27.1047C23.5863 27.1047 23.3536 27.1604 23.1418 27.2718L20.9461 28.4265L21.3654 25.9809C21.4463 25.5088 21.2897 25.0272 20.9469 24.6927L19.1701 22.961L21.6254 22.6041C22.0994 22.5355 22.5092 22.2374 22.7211 21.808L23.8189 19.5831L24.917 21.808C25.129 22.2376 25.5386 22.5353 26.0127 22.6041L28.468 22.961L26.6912 24.6927C26.3483 25.0272 26.1918 25.5088 26.2729 25.9809ZM23.8211 7.19213C25.2295 8.69802 27.7056 11.8507 27.7056 15.3997C27.7056 16.5373 27.4448 17.7333 26.9308 18.9548C26.9009 19.0256 26.8788 19.098 26.861 19.1704L25.124 15.6506C24.8787 15.1539 24.3729 14.8393 23.8189 14.8393C23.265 14.8393 22.7591 15.1539 22.5139 15.6506L20.7767 19.1711C20.7552 19.0828 20.7274 18.9957 20.6892 18.9121C20.1868 17.7054 19.9323 16.5239 19.9323 15.3997C19.9323 11.8672 22.4137 8.70267 23.8211 7.19213ZM12.871 26.1776C9.51194 25.0864 7.26912 21.7485 6.26713 19.9428C8.13469 19.0689 11.8982 17.6879 15.2735 18.7846C16.1727 19.0768 17.054 19.5547 17.9017 20.2042L15.8335 20.5047C15.2854 20.5843 14.8298 20.9683 14.6587 21.4951C14.4875 22.0219 14.6303 22.6001 15.0267 22.987L18.3672 26.2428L18.068 27.988C18.0674 27.2563 17.5228 26.636 16.7938 26.5448C16.683 26.5314 16.572 26.5304 16.4624 26.5413C15.1532 26.6495 13.9448 26.5267 12.871 26.1776ZM34.6652 40.5805C32.6406 40.1899 28.7842 39.095 26.698 36.2233C26.0387 35.3156 25.5509 34.2135 25.2482 32.9469C25.1451 32.4166 24.7491 31.9664 24.194 31.8184C23.434 31.6168 22.6507 32.0543 22.4248 32.8074C22.4145 32.8417 22.4054 32.876 22.3978 32.911C22.0953 34.1931 21.6048 35.3075 20.9395 36.2233C18.8643 39.0797 15 40.1816 12.9721 40.5772C12.7214 38.5253 12.5755 34.51 14.6505 31.6544C15.31 30.7463 16.2086 29.9413 17.3218 29.2612C17.6316 29.0883 17.8678 28.8047 17.9855 28.4665L17.5783 30.8408C17.4845 31.3868 17.7092 31.9385 18.1573 32.2643C18.6055 32.5895 19.1996 32.6323 19.6897 32.3749L23.8182 30.204L27.947 32.3749C28.16 32.4868 28.3925 32.5419 28.624 32.5419H28.6282C29.4319 32.5417 30.0831 31.8904 30.0831 31.0867C30.0831 30.9646 30.0681 30.8463 30.0398 30.733L29.6512 28.4674C29.7598 28.779 29.9729 29.054 30.2715 29.2346C31.4044 29.9201 32.3179 30.7343 32.9866 31.6544C35.0637 34.5121 34.916 38.5311 34.6652 40.5805Z"
+              fill="#095D90"
+            />
+            <path
+              d="M63.6881 14.28V19.88H71.2081V23.432H63.6881V29.352H72.1681V33H59.2081V10.632H72.1681V14.28H63.6881Z"
+              fill="#095D90"
+            />
+            <path
+              d="M81.9993 29.448H89.3593V33H77.5193V10.664H81.9993V29.448Z"
+              fill="#095D90"
+            />
+            <path
+              d="M97.9668 14.28V19.88H105.487V23.432H97.9668V29.352H106.447V33H93.4868V10.632H106.447V14.28H97.9668Z"
+              fill="#095D90"
+            />
+            <path
+              d="M136.15 10.664V33H131.67V18.472L125.686 33H122.294L116.278 18.472V33H111.798V10.664H116.886L123.99 27.272L131.094 10.664H136.15Z"
+              fill="#095D90"
+            />
+            <path
+              d="M146.339 14.28V19.88H153.859V23.432H146.339V29.352H154.819V33H141.859V10.632H154.819V14.28H146.339Z"
+              fill="#095D90"
+            />
+            <path
+              d="M179.275 33H174.795L164.651 17.672V33H160.171V10.632H164.651L174.795 25.992V10.632H179.275V33Z"
+              fill="#095D90"
+            />
+            <path
+              d="M200.182 10.664V14.28H194.23V33H189.75V14.28H183.798V10.664H200.182Z"
+              fill="#095D90"
+            />
+            <path
+              d="M212.443 33.224C210.885 33.224 209.477 32.9573 208.219 32.424C206.981 31.8907 206 31.1227 205.275 30.12C204.549 29.1173 204.176 27.9333 204.155 26.568H208.955C209.019 27.4853 209.339 28.2107 209.915 28.744C210.512 29.2773 211.323 29.544 212.347 29.544C213.392 29.544 214.213 29.2987 214.811 28.808C215.408 28.296 215.707 27.6347 215.707 26.824C215.707 26.1627 215.504 25.6187 215.099 25.192C214.693 24.7653 214.181 24.4347 213.563 24.2C212.965 23.944 212.133 23.6667 211.067 23.368C209.616 22.9413 208.432 22.5253 207.515 22.12C206.619 21.6933 205.84 21.064 205.179 20.232C204.539 19.3787 204.219 18.248 204.219 16.84C204.219 15.5173 204.549 14.3653 205.211 13.384C205.872 12.4027 206.8 11.656 207.995 11.144C209.189 10.6107 210.555 10.344 212.091 10.344C214.395 10.344 216.261 10.9093 217.691 12.04C219.141 13.1493 219.941 14.7067 220.091 16.712H215.163C215.12 15.944 214.789 15.3147 214.171 14.824C213.573 14.312 212.773 14.056 211.771 14.056C210.896 14.056 210.192 14.28 209.659 14.728C209.147 15.176 208.891 15.8267 208.891 16.68C208.891 17.2773 209.083 17.7787 209.467 18.184C209.872 18.568 210.363 18.888 210.939 19.144C211.536 19.3787 212.368 19.656 213.435 19.976C214.885 20.4027 216.069 20.8293 216.987 21.256C217.904 21.6827 218.693 22.3227 219.355 23.176C220.016 24.0293 220.347 25.1493 220.347 26.536C220.347 27.7307 220.037 28.84 219.419 29.864C218.8 30.888 217.893 31.7093 216.699 32.328C215.504 32.9253 214.085 33.224 212.443 33.224Z"
+              fill="#095D90"
+            />
+          </svg>
+        </div>
+        <nav class="header__nav">
+          <button class="header__nav__menu-icon icon--menu">
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+            <span class="line-4"></span>
+            </button>
+          <ul class="header__menu">
+            <li class="header__menu__item">
+              <a href="#buttons" class="header__menu__link">
+                <span class="header__link__icon"
+                  ><svg class='icon--buttons' width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path  d="M11.7332 21.3333V18.1333M11.7332 18.1333V7.46665C11.7332 6.28844 12.6883 5.33331 13.8666 5.33331C15.0448 5.33331 15.9999 6.28844 15.9999 7.46665V16H23.1528C25.0934 16 26.6666 17.5731 26.6666 19.5137V21.3333C26.6666 26.6352 22.3685 30.9333 17.0666 30.9333H15.9999C11.2871 30.9333 7.46655 27.1128 7.46655 22.4C7.46655 20.0436 9.3768 18.1333 11.7332 18.1333Z" stroke="black"/>
+                    <path class='button' d="M19.2 11.7333H23.4666C26.4121 11.7333 28.7999 9.3455 28.7999 6.39998C28.7999 3.45447 26.4121 1.06665 23.4666 1.06665H8.53328C5.58777 1.06665 3.19995 3.45447 3.19995 6.39998C3.19995 9.3455 5.58777 11.7333 8.53328 11.7333" stroke="black"/>
+                    </svg>
+                    
+                </span>
+                <span class="header__link__text">buttons</span></a
+              >
+            </li>
+            <li class="header__menu__item sub-menu__container">
+              <a href="#checkboxes" class="header__menu__link">
+                <span class="header__link__icon"
+                  ><svg class='icon--checkboxes'
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M28.8 1.06668H3.19998C2.02178 1.06668 1.06665 2.02181 1.06665 3.20001V28.8C1.06665 29.9782 2.02178 30.9333 3.19998 30.9333H28.8C29.9782 30.9333 30.9333 29.9782 30.9333 28.8V3.20001C30.9333 2.02181 29.9782 1.06668 28.8 1.06668Z"
+                      stroke="black"
+                    />
+                    <path class='checkmark'
+                      d="M8.53333 16L14.9333 21.3334L23.4667 10.6667"
+                      stroke="black"
+                    /></svg></span
+                ><span class="header__link__text">checkboxes</span>
+              </a>
+            </li>
+            <li class="header__menu__item sub-menu__container">
+              <a href="#spinners" class="header__menu__link">
+                <span class="header__link__icon icon-spinner"
+                  ><svg class='icon--spinners'
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.1676 4.35182C11.1563 3.85022 11.2453 3.3514 11.4294 2.88466C11.6134 2.41792 11.8889 1.99266 12.2396 1.63385C12.5903 1.27504 13.0092 0.989907 13.4716 0.795198C13.934 0.600489 14.4307 0.500126 14.9324 0.5C15.4341 0.499875 15.9308 0.59999 16.3933 0.794467C16.8558 0.988945 17.2748 1.27387 17.6257 1.6325C17.9766 1.99114 18.2523 2.41626 18.4366 2.88291C18.6209 3.34956 18.7102 3.84833 18.6991 4.34994C18.6773 5.3341 18.2711 6.27063 17.5675 6.95905C16.8639 7.64748 15.9187 8.03309 14.9343 8.03333C13.9499 8.03358 13.0045 7.64844 12.3005 6.96037C11.5965 6.2723 11.1899 5.33597 11.1676 4.35182ZM27.2333 7.46667C27.2333 8.18275 26.9489 8.86951 26.4425 9.37586C25.9362 9.8822 25.2494 10.1667 24.5333 10.1667C23.8173 10.1667 23.1305 9.8822 22.6241 9.37586C22.1178 8.86951 21.8333 8.18275 21.8333 7.46667C21.8333 6.75058 22.1178 6.06383 22.6241 5.55748C23.1305 5.05113 23.8173 4.76667 24.5333 4.76667C25.2494 4.76667 25.9362 5.05113 26.4425 5.55748C26.9489 6.06383 27.2333 6.75058 27.2333 7.46667ZM26.1 16C26.1 15.2839 26.3845 14.5972 26.8908 14.0908C27.3972 13.5845 28.0839 13.3 28.8 13.3C29.5161 13.3 30.2028 13.5845 30.7092 14.0908C31.2155 14.5972 31.5 15.2839 31.5 16C31.5 16.7161 31.2155 17.4028 30.7092 17.9092C30.2028 18.4155 29.5161 18.7 28.8 18.7C28.0839 18.7 27.3972 18.4155 26.8908 17.9092C26.3845 17.4028 26.1 16.7161 26.1 16ZM21.8342 24.6034C21.8249 24.243 21.8878 23.8845 22.0192 23.5488C22.1507 23.2132 22.348 22.9072 22.5995 22.6491C22.8511 22.3909 23.1518 22.1857 23.4839 22.0456C23.8161 21.9055 24.1729 21.8333 24.5333 21.8333C24.8938 21.8333 25.2506 21.9055 25.5827 22.0456C25.9149 22.1857 26.2156 22.3909 26.4671 22.6491C26.7187 22.9072 26.916 23.2132 27.0474 23.5488C27.1789 23.8845 27.2418 24.243 27.2324 24.6034C27.2142 25.3071 26.9218 25.9759 26.4176 26.4671C25.9134 26.9584 25.2373 27.2333 24.5333 27.2333C23.8294 27.2333 23.1533 26.9584 22.6491 26.4671C22.1449 25.9759 21.8525 25.3071 21.8342 24.6034ZM13.3 28.799C13.3001 28.4444 13.3701 28.0934 13.5059 27.7658C13.6417 27.4383 13.8407 27.1407 14.0915 26.8901C14.3423 26.6395 14.6401 26.4407 14.9677 26.3051C15.2953 26.1696 15.6464 26.0999 16.001 26.1C16.3556 26.1001 16.7066 26.1701 17.0342 26.3059C17.3617 26.4417 17.6593 26.6407 17.9099 26.8915C18.1605 27.1423 18.3593 27.4401 18.4949 27.7677C18.6304 28.0953 18.7001 28.4464 18.7 28.801C18.6997 29.5171 18.415 30.2037 17.9085 30.7099C17.4019 31.2161 16.7151 31.5003 15.999 31.5C15.2829 31.4997 14.5963 31.215 14.0901 30.7085C13.5839 30.2019 13.2997 29.5151 13.3 28.799ZM4.76734 25.6468C4.76108 25.4284 4.79869 25.211 4.87792 25.0075C4.95716 24.8039 5.07642 24.6184 5.22864 24.4617C5.38087 24.3051 5.56297 24.1805 5.76417 24.0955C5.96536 24.0105 6.18157 23.9667 6.4 23.9667C6.61843 23.9667 6.83464 24.0105 7.03583 24.0955C7.23703 24.1805 7.41913 24.3051 7.57136 24.4617C7.72358 24.6184 7.84284 24.8039 7.92208 25.0075C8.00131 25.211 8.03892 25.4284 8.03266 25.6468C8.0205 26.0717 7.84315 26.4751 7.53829 26.7714C7.23343 27.0676 6.82509 27.2333 6.4 27.2333C5.97491 27.2333 5.56657 27.0676 5.26171 26.7714C4.95685 26.4751 4.77951 26.0717 4.76734 25.6468ZM0.50074 17.1158C0.494161 16.8973 0.531521 16.6797 0.610606 16.4758C0.689692 16.272 0.808893 16.0861 0.961143 15.9292C1.11339 15.7723 1.2956 15.6476 1.49695 15.5624C1.6983 15.4772 1.9147 15.4333 2.13333 15.4333C2.35196 15.4333 2.56837 15.4772 2.76972 15.5624C2.97107 15.6476 3.15327 15.7723 3.30552 15.9292C3.45777 16.0861 3.57698 16.272 3.65606 16.4758C3.73515 16.6797 3.77251 16.8973 3.76593 17.1158C3.75315 17.5403 3.57554 17.9431 3.27076 18.2389C2.96599 18.5346 2.55801 18.7 2.13333 18.7C1.70866 18.7 1.30068 18.5346 0.995903 18.2389C0.691127 17.9431 0.51352 17.5403 0.50074 17.1158ZM4.76667 8.53333C4.76667 8.10015 4.93875 7.6847 5.24506 7.37839C5.55137 7.07208 5.96681 6.9 6.4 6.9C6.83319 6.9 7.24863 7.07208 7.55494 7.37839C7.86125 7.6847 8.03333 8.10015 8.03333 8.53333C8.03333 8.96652 7.86125 9.38196 7.55494 9.68827C7.24863 9.99458 6.83319 10.1667 6.4 10.1667C5.96681 10.1667 5.55137 9.99458 5.24506 9.68827C4.93875 9.38196 4.76667 8.96652 4.76667 8.53333Z"
+                      stroke="black"
+                    />
+                  </svg> </span
+                ><span class="header__link__text">spinners</span>
+              </a>
+            </li>
+            <li class="header__menu__item sub-menu__container">
+              <a href="#inputs" class="header__menu__link">
+                <span class="header__link__icon"
+                  ><svg class='icon--inputs' width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path  d="M30.9333 23.4667V6.4C30.9333 5.22179 29.9782 4.26666 28.8 4.26666H3.19998C2.02178 4.26666 1.06665 5.22179 1.06665 6.4V23.4667C1.06665 24.6449 2.02178 25.6 3.19998 25.6L28.8 25.6C29.9782 25.6 30.9333 24.6449 30.9333 23.4667Z" stroke="black"/>
+                    <path class='circle-2' d="M20.9063 21.3333C19.7281 21.3333 18.7729 20.3782 18.7729 19.2C18.7729 18.0218 19.7281 17.0667 20.9063 17.0667C22.0845 17.0667 23.0396 18.0218 23.0396 19.2C23.0396 20.3782 22.0845 21.3333 20.9063 21.3333Z" stroke="black"/>
+                    <path  d="M28.8 4.26666C29.9782 4.26666 30.9333 5.22179 30.9333 6.4V23.4667C30.9333 24.6449 29.9782 25.6 28.8 25.6L3.19998 25.6C2.02178 25.6 1.06665 24.6449 1.06665 23.4667L1.06665 6.4C1.06665 5.22179 2.02178 4.26666 3.19998 4.26666L28.8 4.26666Z" stroke="black"/>
+                    <path class='circle-1' d="M13.6531 17.0667C14.8313 17.0667 15.7864 18.0218 15.7864 19.2C15.7864 20.3782 14.8313 21.3333 13.6531 21.3333C12.4749 21.3333 11.5198 20.3782 11.5198 19.2C11.5198 18.0218 12.4749 17.0667 13.6531 17.0667Z" stroke="black"/>
+                    <path class='indicator'  d="M6.40002 22.4V9.59998" stroke="black"/>
+                    </svg></span
+                ><span class="header__link__text">inputs</span>
+              </a>
+            </li>
+            <li class="header__menu__item sub-menu__container">
+              <a href="#radios" class="header__menu__link">
+                <span class="header__link__icon"
+                  ><svg class='icon--radios'
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path class='inner-circle'
+                      d="M8.53332 16C8.53332 20.1237 11.8763 23.4667 16 23.4667C20.1237 23.4667 23.4666 20.1237 23.4666 16C23.4666 11.8763 20.1237 8.53335 16 8.53335C11.8763 8.53335 8.53332 11.8763 8.53332 16Z"
+                      stroke="black"
+                    />
+                    <path
+                      d="M1.06665 16C1.06665 24.2475 7.75253 30.9333 16 30.9333C24.2474 30.9333 30.9333 24.2475 30.9333 16C30.9333 7.75256 24.2474 1.06668 16 1.06668C7.75253 1.06668 1.06665 7.75256 1.06665 16Z"
+                      stroke="black"
+                    /></svg></span
+                ><span class="header__link__text">radios</span>
+              </a>
+            </li>
+            <li class="header__menu__item sub-menu__container">
+              <a href="#sliders" class="header__menu__link">
+                <span class="header__link__icon"
+                  ><svg class='icon--sliders' width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 7.46668L5.33333 7.46667L0 7.46667M32 24.5333L18.1333 24.5333L2.71245e-07 24.5333" stroke="black"/>
+                    <path class='thumb-2' d="M26.6666 24.5333C26.6666 22.1769 24.7564 20.2667 22.4 20.2667C20.0436 20.2667 18.1333 22.1769 18.1333 24.5333C18.1333 26.8897 20.0436 28.8 22.4 28.8C24.7564 28.8 26.6666 26.8897 26.6666 24.5333Z" fill="white" stroke="black"/>
+                    <path class='thumb-1' d="M13.8667 7.46668C13.8667 5.11026 11.9565 3.20001 9.60004 3.20001C7.24363 3.20001 5.33337 5.11026 5.33337 7.46668C5.33337 9.82309 7.24363 11.7333 9.60004 11.7333C11.9565 11.7333 13.8667 9.82309 13.8667 7.46668Z" fill="white" stroke="black"/>
+                    </svg> </span
+                ><span class="header__link__text">sliders</span>
+              </a>
+            </li>
+            <li class="header__menu__item sub-menu__container">
+              <a href="#switches" class="header__menu__link">
+                <span class="header__link__icon"
+                  ><svg class='icon--switches' width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class='thumb-1' d="M7.46671 5.33334C8.64491 5.33334 9.60004 6.28847 9.60004 7.46667C9.60004 8.64488 8.64491 9.60001 7.46671 9.60001C6.2885 9.60001 5.33337 8.64488 5.33337 7.46667C5.33337 6.28847 6.2885 5.33334 7.46671 5.33334Z" stroke="black"/>
+                    <path class='thumb-2' d="M24.5334 26.6667C23.3552 26.6667 22.4 25.7115 22.4 24.5333C22.4 23.3551 23.3552 22.4 24.5334 22.4C25.7116 22.4 26.6667 23.3551 26.6667 24.5333C26.6667 25.7115 25.7116 26.6667 24.5334 26.6667Z" stroke="black"/>
+                    <path d="M7.46665 30.9333H24.5333C28.0679 30.9333 30.9333 28.068 30.9333 24.5333C30.9333 20.9987 28.0679 18.1333 24.5333 18.1333L7.46665 18.1333C3.93203 18.1333 1.06665 20.9987 1.06665 24.5333C1.06665 28.068 3.93203 30.9333 7.46665 30.9333Z" stroke="black"/>
+                    <path d="M24.5333 1.06668H7.46665C3.93203 1.06668 1.06665 3.93206 1.06665 7.46668C1.06665 11.0013 3.93203 13.8667 7.46665 13.8667H24.5333C28.0679 13.8667 30.9333 11.0013 30.9333 7.46668C30.9333 3.93206 28.0679 1.06668 24.5333 1.06668Z" stroke="black"/>
+                    </svg>
+                    
+                  </svg> </span
+                ><span class="header__link__text">switches</span>
+              </a>
+            </li>
+            <button class="color-scheme ">
+              <svg class='icon--moon' width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.54297 24.2387C4.46498 24.4318 5.42066 24.5333 6.40005 24.5333C14.0584 24.5333 20.2667 18.325 20.2667 10.6667C20.2667 6.94359 18.7995 3.56321 16.4116 1.07224C24.4688 1.29029 30.9333 7.89021 30.9333 16C30.9333 24.2475 24.2474 30.9333 16 30.9333C10.7976 30.9333 6.21655 28.2731 3.54297 24.2387Z" stroke="black" stroke-linejoin="round"/>
+                </svg>  
+                <svg class='icon--sun' width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 3.19857V1.06667M16 30.9138V28.7819M28.8 15.9902H30.9333M3.19998 15.9902H1.06665M5.33332 5.33047L3.19998 3.19857M28.8 3.19857L26.6666 5.33047M5.33332 26.6499L3.19998 28.7819M28.8 28.7819L26.6666 26.6499M22.4 15.9902C22.4 19.5229 19.5349 22.3861 16 22.3861C12.465 22.3861 9.59998 19.5229 9.59998 15.9902C9.59998 12.4576 12.465 9.5944 16 9.5944C19.5349 9.5944 22.4 12.4576 22.4 15.9902Z" stroke="black" stroke-linecap="square"/>
+                  </svg>
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+       <!---=============================================
+    =            landing hero            =
+    =============================================-->
+    <main class="landing">
+      <div class="landing__container section-container">
+        <div class="landing__text">
+          <h1 class="landing__title">vanilla css <span>elements</span></h1>
+          <p class="landing__paragraph">
+            copy and paste css elements- builded with simplicity in mind with as
+            few html markup as possible
+          </p>
+          <span class="landing__cta"></span>
+        </div>
+        <div class="landing__image">
+          <img class='hero-image' src="./assets/image-landing-light-mode.svg" alt="landing-image-elements" />
+        </div>
+        
+      </div>
+    </main>
+       <!---=============================================
+    =            Section-elements-buttons            =
+    =============================================-->
+    <section class="buttons" id="buttons">
+      <h1 class="section__title">buttons</h1>
+      <div class="section-container buttons__container">
+        <div
+          class=" element__container effect--focus effect--hover"
+          data-type="buttons"
+        >
+          <a href="#_" class="btn-1 element">
+            button
+          </a>
+        </div>
+        <div
+          class=" element__container effect--focus effect--hover "
+          data-type="buttons"
+        >
+          <a href="#_" class="btn-2 element">
+            button</a
+          >
+        </div>
+        <div class=" element__container effect--focus effect--hover" data-type="buttons">
+          <a href="#_" class="btn-3 element"
+            >button</a
+          >
+        </div>
+        <div class=" element__container effect--focus effect--hover" data-type="buttons">
+          <a href="#_"class="btn-4 element"
+            >button</a
+          >
+        </div>
+        <div class=" element__container effect--focus effect--hover" data-type="buttons">
+          <a href="#_" class="btn-5 element"
+            >button</a
+          >
+        </div>
+        <div class=" element__container effect--focus effect--hover" data-type="buttons">
+          <a href="#_" class="btn-6 element"
+            >button</a
+          >
+        </div>
+        <div class=" element__container effect--focus effect--hover" data-type="buttons">
+          <a href="#_" class="btn-7 element"
+            >button</a
+          >
+        </div>
+        <div class=" element__container effect--focus effect--hover" data-type="buttons">
+          <a href="#_" class="btn-8 element"
+            >button</a
+          >
+        </div>
+        <div class=" element__container" data-type="buttons">
+          <a href="#_" class="btn-9 element">button</a>
+        </div>
+        <div class=" element__container effect--focus effect--hover" data-type="buttons">
+          <a href="#_" class="btn-10 element"
+            >button<svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+              fill='currentColor'
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2 16C2 15.7348
+              2.10536 15.4804 2.29289 15.2929C2.48043 15.1053 2.73478 15 3
+              15H26.586L20.292 8.70798C20.1042 8.52021 19.9987 8.26553 19.9987
+              7.99998C19.9987 7.73443 20.1042 7.47975 20.292 7.29198C20.4798
+              7.10421 20.7344 6.99872 21 6.99872C21.2656 6.99872 21.5202 7.10421
+              21.708 7.29198L29.708 15.292C29.8011 15.3849 29.875 15.4952
+              29.9254 15.6167C29.9758 15.7382 30.0018 15.8684 30.0018 16C30.0018
+              16.1315 29.9758 16.2618 29.9254 16.3832C29.875 16.5047 29.8011
+              16.6151 29.708 16.708L21.708 24.708C21.5202 24.8958 21.2656
+              25.0012 21 25.0012C20.7344 25.0012 20.4798 24.8958 20.292
+              24.708C20.1042 24.5202 19.9987 24.2655 19.9987 24C19.9987 23.7344
+              20.1042 23.4798 20.292 23.292L26.586 17H3C2.73478 17 2.48043
+              16.8946 2.29289 16.7071C2.10536 16.5196 2 16.2652 2 16V16Z"
+                fill="white"
+              /></svg
+          ></a>
+        </div>
+        <div class=" element__container" data-type="buttons">
+          <a href="#_" class="btn-11 element"
+            >button <span class="btn-11__shades"></span
+          ></a>
+        </div>
+        <div class=" element__container effect--focus effect--hover " data-type="buttons">
+          <a href="#_" class="btn-12 element">button </a>
+        </div>
+        <div class=" element__container effect--focus effect--hover" data-type="buttons">
+          <a href="#_"class="btn-13 element">button </a>
+        </div>
+      </div>
+    </section>
+     <!---=============================================
+    =            Section-elements-checkboxes            =
+    =============================================-->
+    <section class="checkboxes" id="checkboxes">
+      <h1 class="section__title">checkboxes</h1>
+      <div class="section-container checkboxes__container ">
+        
+        <div class="checkbox-element element__container effect--focus effect--hover" data-type="checkboxes">
+          <label for="checkbox-1-default-checkbox" class="checkbox-1 element">
+            label
+            <input
+              type="checkbox"
+              name="checkbox-1-default-checkbox"
+              id="checkbox-1-default-checkbox"
+            />
+           
+            </label>
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-2-default-checkbox" class="checkbox-2 element"
+            >
+            label<input
+              type="checkbox"
+              name="checkbox-2-default-checkbox"
+              id="checkbox-2-default-checkbox"
+            />
+            </label
+          >
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-3-default-checkbox" class="checkbox-3 element"
+            >label<input
+              type="checkbox"
+              name="checkbox-3-default-checkbox"
+              id="checkbox-3-default-checkbox"
+            />
+            </label
+          >
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-4-default-checkbox" class="checkbox-4 element"
+            >label<input
+              type="checkbox"
+              name="checkbox-4-default-checkbox"
+              id="checkbox-4-default-checkbox"
+            />
+            </label
+          >
+          
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-5-default-checkbox" class="checkbox-5 element"
+            >label<input
+              type="checkbox"
+              name="checkbox-5-default-checkbox"
+              id="checkbox-5-default-checkbox"
+            />
+            </label
+          >
+          
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-6-default-checkbox" class="checkbox-6 element"
+            >label<input
+              type="checkbox"
+              name="checkbox-6-default-checkbox"
+              id="checkbox-6-default-checkbox"
+            />
+            </label
+          >
+          
+        </div>
+      </div>
+    </section>
+      <!---=============================================
+    =            Section-elements-radios            =
+    =============================================-->
+    <section class="radios" id="radios">
+      <h1 class="section__title">radios</h1>
+      <div class="section-container radios__container ">
+        
+        <div class="checkbox-element element__container effect--focus effect--hover" data-type="checkboxes">
+          <label for="checkbox-1-default-checkbox" class="checkbox-1 element">
+            label
+            <input
+              type="checkbox"
+              name="checkbox-1-default-checkbox"
+              id="checkbox-1-default-checkbox"
+            />
+           
+            </label>
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-2-default-checkbox" class="checkbox-2 element"
+            >
+            label<input
+              type="checkbox"
+              name="checkbox-2-default-checkbox"
+              id="checkbox-2-default-checkbox"
+            />
+            </label
+          >
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-3-default-checkbox" class="checkbox-3 element"
+            >label<input
+              type="checkbox"
+              name="checkbox-3-default-checkbox"
+              id="checkbox-3-default-checkbox"
+            />
+            </label
+          >
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-4-default-checkbox" class="checkbox-4 element"
+            >label<input
+              type="checkbox"
+              name="checkbox-4-default-checkbox"
+              id="checkbox-4-default-checkbox"
+            />
+            </label
+          >
+          
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-5-default-checkbox" class="checkbox-5 element"
+            >label<input
+              type="checkbox"
+              name="checkbox-5-default-checkbox"
+              id="checkbox-5-default-checkbox"
+            />
+            </label
+          >
+          
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-6-default-checkbox" class="checkbox-6 element"
+            >label<input
+              type="checkbox"
+              name="checkbox-6-default-checkbox"
+              id="checkbox-6-default-checkbox"
+            />
+            </label
+          >
+          
+        </div>
+      </div>
+    </section>
+      <!---=============================================
+    =            Section-elements-toggle-tokens            =
+    =============================================-->
+    <section class="toggle-tokens" id="toggle-tokens">
+      <h1 class="section__title">toggle tokens</h1>
+      <div class="section-container toggle-tokens__container ">
+        
+        <div class="checkbox-element element__container effect--focus effect--hover" data-type="checkboxes">
+          <label for="checkbox-1-default-checkbox" class="checkbox-1 element">
+            label
+            <input
+              type="checkbox"
+              name="checkbox-1-default-checkbox"
+              id="checkbox-1-default-checkbox"
+            />
+           
+            </label>
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-2-default-checkbox" class="checkbox-2 element"
+            >
+            label<input
+              type="checkbox"
+              name="checkbox-2-default-checkbox"
+              id="checkbox-2-default-checkbox"
+            />
+            </label
+          >
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-3-default-checkbox" class="checkbox-3 element"
+            >label<input
+              type="checkbox"
+              name="checkbox-3-default-checkbox"
+              id="checkbox-3-default-checkbox"
+            />
+            </label
+          >
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-4-default-checkbox" class="checkbox-4 element"
+            >label<input
+              type="checkbox"
+              name="checkbox-4-default-checkbox"
+              id="checkbox-4-default-checkbox"
+            />
+            </label
+          >
+          
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-5-default-checkbox" class="checkbox-5 element"
+            >label<input
+              type="checkbox"
+              name="checkbox-5-default-checkbox"
+              id="checkbox-5-default-checkbox"
+            />
+            </label
+          >
+          
+        </div>
+        <div class="checkbox-element element__container effect--focus effect--hover " data-type="checkboxes">
+          <label for="checkbox-6-default-checkbox" class="checkbox-6 element"
+            >label<input
+              type="checkbox"
+              name="checkbox-6-default-checkbox"
+              id="checkbox-6-default-checkbox"
+            />
+            </label
+          >
+          
+        </div>
+      </div>
+    </section>
+     <!---=============================================
+    =            Section-elements-switches            =
+    =============================================-->
+    <section class="switches" id="switches">
+      <h1 class="section__title">switches</h1>
+      <div class="section-container switches__container " >
+        
+        <div class=" element__container effect--focus effect--hover" data-type="switches" >
+          <label for="switch-1-checkbox-default" class="switch-1 element">
+            label
+            <input
+              type="checkbox"
+              role="switch"
+              name="switch-1-checkbox-default"
+              id="switch-1-checkbox-default"
+            />
+          </label>
+        </div>
+        <div class=" element__container effect--focus effect--hover " data-type="switches">
+          <label for="switch-2-checkbox-default" class="switch-2 element">
+            label
+            <input
+              type="checkbox"
+              role="switch"
+              name="switch-2-checkbox-default"
+              id="switch-2-checkbox-default" 
+            />
+           
+          </label>
+        </div>
+        <div class="element__container effect--focus effect--hover " data-type="switches">
+          <label for="switch-3-checkbox-default" class="switch-3 element">
+           on
+            <input
+              type="checkbox"
+              role="switch"
+              name="switch-3-checkbox-default"
+              id="switch-3-checkbox-default"
+            />
+           off
+          </label>
+        </div>
+        <div class=" element__container effect--focus effect--hover " data-type="switches">
+          <label for="switch-4-checkbox-default" class="switch-4 element">
+            label
+            <input
+              type="checkbox"
+              role="switch"
+              name="switch-4-checkbox-default"
+              id="switch-4-checkbox-default"
+            />
+            
+          </label>
+        </div>
+        <div class=" element__container effect--focus effect--hover " data-type="switches">
+          <label for="switch-5-checkbox-default" class="switch-5 element">
+            label
+            <input
+              type="checkbox"
+              role="switch"
+              name="switch-5-checkbox-default"
+              id="switch-5-checkbox-default"
+            />
+          </label>
+        </div>
+        <div class="element__container effect--focus effect--hover " data-type="switches">
+          <label for="switch-6-checkbox-default" class="switch-6 element">
+            label
+            <input
+              type="checkbox"
+              role="switch"
+              name="switch-6-checkbox-default"
+              id="switch-6-checkbox-default"
+            />
+            
+          </label>
+        </div>
+        <div class="element__container effect--focus effect--hover " data-type="switches">
+          <label for="switch-7-checkbox-default" class="switch-7 element">
+            label
+            <input
+              type="checkbox"
+              role="switch"
+              name="switch-7-checkbox-default"
+              id="switch-7-checkbox-default"
+            />
+            
+          </label>
+        </div>
+        <div class="element__container effect--focus effect--hover " data-type="switches">
+          <label for="switch-8-checkbox-default" class="switch-8 element">
+              label
+            <input
+              type="checkbox"
+              role="switch"
+              name="switch-8-checkbox-default"
+              id="switch-8-checkbox-default"
+            />
+            
+          </label>
+        </div>
+        <div class="element__container effect--focus effect--hover " data-type="switches">
+          
+            <label for="switch-9-checkbox-default" class="switch-9 element">
+              
+              <input
+                type="checkbox"
+                role="switch"
+                name="switch-9-checkbox-default"
+                id="switch-9-checkbox-default"
+              />
+              
+            </label>
+          
+        </div>
+      </div>
+    </section>
+     <!---=============================================
+    =            Section-elements-inputs            =
+    =============================================-->
+    <section class="inputs">
+      <h1 class="section__title">inputs</h1>
+      <div class="section-container inputs__container  " >
+        <div class=" element__container effect--focus effect--hover" data-type="inputs">
+          <div class="input-1 element ">
+            <input
+              type="text"
+              name="input-1-input-default"
+              id="input-1-input-default"
+              placeholder=" "
+            />
+            <label for="input-1-input-default">name</label>
+          </div>
+        </div>
+        <div class=" element__container effect--focus effect--hover" data-type="inputs">
+          <div class="input-2 element">
+            <input
+              type="text"
+              name="input-2-input-default"
+              id="input-2-input-default"
+              placeholder=" "
+            />
+            <label for="input-2-input-default">name</label>
+          </div>
+        </div>
+        <div class=" element__container effect--focus effect--hover" data-type="inputs">
+          <div class="input-3 element">
+            <input
+              type="text"
+              name="input-3-input-default"
+              id="input-3-input-default"
+              placeholder=" "
+            />
+            <label for="input-3-input-default">name</label>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+   
+     <!---=============================================
+    =            Section-elements-sliders            =
+    =============================================-->
+    <section class="sliders" id="sliders">
+      <h1 class="section__title">sliders</h1>
+      <div class="section-container cards__container">
+        
+        <div class="element__container effect--focus effect--hover" data-type="sliders">
+          <label for="slider-1-range-default" class='slider-1 element'>
+            label
+          <input type="range" name="slider-1-range-default" id="slider-1-range-default" min='0' max='100' value='50'>
+        </label>
+        </div>
+        <div class="element__container effect--focus effect--hover" data-type="sliders">
+          <label for="slider-2-range-default" class='slider-2 element'>
+            label
+          <input type="range" name="slider-2-range-default" id="slider-2-range-default" min='0' max='100' value='50'>
+         </label>
+        </div>
+        <div class="element__container effect--focus effect--hover" data-type="sliders">
+          <label for="slider-3-range-default" class='slider-3 element'>
+            label
+          <input type="range" name="slider-3-range-default" id="slider-3-range-default" min='0' max='100' value='50' oninput="slider3Output.value=value">
+        <output id='slider3Output' name="slider-3-output" for="slider-3-range-default" >50</output>
+        </label>
+        </div>
+        <div class="element__container effect--focus effect--hover" data-type="sliders">
+          <label for="slider-4-range-default" class='slider-4 element'>
+            label
+          <input type="range" name="slider-4-range-default" id="slider-4-range-default" min='0' max='100' value='50'>
+         </label>
+        </div>
+      </div>
+    </section>
+      <!---=============================================
+    =            Section-elements-spinners           =
+    =============================================-->
+    <section class="spinners" id="spinners">
+      <h1 class="section__title">spinners</h1>
+      <div class="section-container spinners__container">
+        
+        <div class="element__container" data-type='spinners'>
+          <div class="spinner-1 element"></div>
+        </div>
+        <div class="element__container" data-type='spinners'>
+          <div class="spinner-2 element"></div>
+        </div>
+        <div class="element__container" data-type='spinners'>
+          <div class="spinner-3 element">
+            <span class="spinner-3__circle" style="--id: 1"></span
+            ><span class="spinner-3__circle" style="--id: 2"></span
+            ><span class="spinner-3__circle" style="--id: 3"></span
+            ><span class="spinner-3__circle" style="--id: 4"></span
+            ><span class="spinner-3__circle" style="--id: 5"></span
+            ><span class="spinner-3__circle" style="--id: 6"></span
+            ><span class="spinner-3__circle" style="--id: 7"></span
+            ><span class="spinner-3__circle" style="--id: 8"></span
+            ><span class="spinner-3__circle" style="--id: 9"></span>
+            <span class="spinner-3__circle" style="--id: 10"></span>
+            <span class="spinner-3__circle" style="--id: 11"></span>
+            <span class="spinner-3__circle" style="--id: 12"></span>
+            <span class="spinner-3__circle" style="--id: 13"></span>
+            <span class="spinner-3__circle" style="--id: 14"></span>
+            <span class="spinner-3__circle" style="--id: 15"></span>
+            <span class="spinner-3__circle" style="--id: 16"></span>
+          </div>
+        </div>
+        <div class="element__container" data-type='spinners'>
+          <div class="spinner-4 element"></div>
+        </div>
+        <div class="element__container" data-type='spinners'>
+          <div class="spinner-5 element">
+            <span class="spinner-5__circle" style="--id: 18"></span
+              >
+            <span class="spinner-5__circle" style="--id: 16"></span
+            ><span class="spinner-5__circle" style="--id: 14"></span
+            ><span class="spinner-5__circle" style="--id: 12"></span
+            ><span class="spinner-5__circle" style="--id: 10"></span
+            ><span class="spinner-5__circle" style="--id: 8"></span
+            ><span class="spinner-5__circle" style="--id: 6"></span
+            ><span class="spinner-5__circle" style="--id: 4"></span
+            ><span class="spinner-5__circle" style="--id: 6"></span
+            ><span class="spinner-5__circle" style="--id: 8"></span
+            ><span class="spinner-5__circle" style="--id: 10"></span>
+            <span class="spinner-5__circle" style="--id: 12"></span>
+            <span class="spinner-5__circle" style="--id: 14"></span>
+            <span class="spinner-5__circle" style="--id: 16"></span>
+            <span class="spinner-5__circle" style="--id: 18"></span
+              >
+          </div>
+        </div>
+        <div class="element__container" data-type='spinners'>
+          <div class="spinner-6 element">
+            <span class="spinner-6__circles" ></span>
+          </div>
+        </div>
+        <div class="element__container" data-type='spinners'>
+          <div class="spinner-7 element">
+          </div>
+        </div>
+      </div>
+    </section>
+     <!---=============================================
+    =            Section-footer           =
+    =============================================-->
+<footer> <div class="section-container footer__container">
+ <div class="footer__logo--ts"><svg width="81" height="48" viewBox="0 0 81 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14.8508 47.2045H25.5912V28.3757L14.8508 22.2763V47.2045Z" fill="#095D90"/>
+  <path d="M40.442 9.54696V0.795578H29.6735L33.0166 9.54696H40.442Z" fill="#095D90"/>
+  <path d="M0 9.54696H14.8508L23.4905 0.795578H0V9.54696Z" fill="#095D90"/>
+  <path d="M25.5912 9.54696H33.0166L29.6735 0.795578L25.5912 9.54696Z" fill="#095D90"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M71.9523 46.0773C68.991 47.3591 65.3888 48 61.1457 48L61.212 39.3812C64.2617 39.3812 66.5159 38.9392 67.9744 38.0552C69.433 37.1271 70.1623 35.9116 70.1623 34.4088C70.1623 33.3039 69.7203 32.3978 68.8363 31.6906C67.9966 30.9392 66.8916 30.3425 65.5214 29.9006C64.1954 29.4586 62.3833 28.9724 60.0849 28.442C56.549 27.6022 53.654 26.7624 51.3999 25.9227C49.1457 25.0829 47.201 23.7348 45.5656 21.8785C43.9744 20.0221 43.1789 17.547 43.1789 14.453L53.8529 13.9227C53.8529 15.5138 54.6706 16.7072 56.3059 17.5028C57.9855 18.2541 60.5269 19.0055 63.9302 19.7569C67.4662 20.5967 70.3612 21.4365 72.6153 22.2762C74.8695 23.116 76.7921 24.442 78.3833 26.2541C80.0186 28.0663 80.8363 30.5193 80.8363 33.6133C80.8363 36.2652 80.0849 38.6961 78.5822 40.9061C77.1236 43.0718 74.9137 44.7956 71.9523 46.0773ZM62.6706 8.61878C66.9579 8.61878 71.2452 9.83425 75.5325 12.2652L78.8474 4.1105C76.7258 2.78453 74.2507 1.76796 71.422 1.06077C68.5932 0.353591 65.6982 0 62.7369 0C58.4938 0 54.8916 0.640884 51.9303 1.92265L62.6706 8.61878ZM50.4717 46.5414C47.0684 45.5249 44.328 44.221 42.2507 42.6298L45.8971 34.5414C47.886 36 50.2507 37.1713 52.991 38.0552L50.4717 46.5414Z" fill="#095D90"/>
+  </svg></div>
+  <nav class="footer__nav">
+    <ul class="footer__menu">
+      <li class="footer__menu__item">
+        <a href="https://github.com/TalmSnir" class="footer__menu__link">
+          <svg class='icon--github' width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.65021 12.4769C5.9136 12.3939 6.05986 12.1132 5.9769 11.8498C5.89394 11.5864 5.61317 11.4401 5.34979 11.5231L5.65021 12.4769ZM2.00197 9.51639L1.51836 9.38942L1.26442 10.3566L1.74803 10.4836L2.00197 9.51639ZM9 14.5V15H10V14.5H9ZM9.0625 9.6875L9.00906 9.19036C8.81734 9.21097 8.65455 9.33999 8.5907 9.52194C8.52686 9.70389 8.57333 9.90634 8.71013 10.0422L9.0625 9.6875ZM12.5 5.9125H13L13 5.91089L12.5 5.9125ZM11.6669 3.90625L11.2008 3.72524C11.1291 3.90974 11.1731 4.11914 11.3128 4.2593L11.6669 3.90625ZM11.6169 1.88937L12.0734 1.68549C12.0132 1.55057 11.8963 1.44921 11.7542 1.40861L11.6169 1.88937ZM9.44438 2.68125L9.31826 3.16508C9.45382 3.20042 9.59799 3.17726 9.71566 3.10125L9.44438 2.68125ZM5.55562 2.68125L5.28442 3.1013C5.40208 3.17727 5.54621 3.20041 5.68174 3.16508L5.55562 2.68125ZM3.38313 1.88937L3.24564 1.40865C3.10362 1.44926 2.98682 1.55061 2.92658 1.68549L3.38313 1.88937ZM3.33313 3.90625L3.68715 4.25933C3.82693 4.11917 3.87087 3.90975 3.79921 3.72524L3.33313 3.90625ZM2.5 5.92875H3L3 5.92747L2.5 5.92875ZM5.9375 9.6875L6.29045 10.0417C6.42616 9.9064 6.47265 9.7055 6.41015 9.52439C6.34765 9.34328 6.18715 9.21381 5.99691 9.19104L5.9375 9.6875ZM5.5 11H6C6 10.9878 5.99955 10.9756 5.99866 10.9634L5.5 11ZM5 14.5V15H6V14.5H5ZM5.34979 11.5231C4.74678 11.713 4.3643 11.6918 4.11084 11.6082C3.85886 11.525 3.66567 11.3578 3.4814 11.1175C3.38808 10.9959 3.3021 10.8623 3.21181 10.7161C3.12597 10.5771 3.02879 10.4142 2.93047 10.2692C2.73966 9.9878 2.45815 9.63616 2.00197 9.51639L1.74803 10.4836C1.82748 10.5045 1.93206 10.5786 2.10281 10.8304C2.18527 10.952 2.26274 11.0825 2.36104 11.2417C2.4549 11.3936 2.56254 11.5627 2.68797 11.7262C2.9412 12.0563 3.28599 12.389 3.79744 12.5578C4.30742 12.7261 4.91384 12.7088 5.65021 12.4769L5.34979 11.5231ZM10 10.9375C10 10.6201 9.98611 10.3301 9.89602 10.0596C9.8001 9.77159 9.63428 9.55071 9.41487 9.33276L8.71013 10.0422C8.8651 10.1962 8.91802 10.2878 8.94726 10.3756C8.98232 10.4809 9 10.6299 9 10.9375H10ZM9.11594 10.1846C10.0189 10.0876 11.004 9.85986 11.7626 9.20319C12.5429 8.52773 13 7.47445 13 5.9125H12C12 7.2718 11.6105 8.01226 11.1081 8.44712C10.5841 8.90076 9.8505 9.09992 9.00906 9.19036L9.11594 10.1846ZM13 5.91089C12.9971 5.02667 12.6453 4.17934 12.0209 3.5532L11.3128 4.2593C11.751 4.69877 11.998 5.29349 12 5.91411L13 5.91089ZM12.133 4.08726C12.2823 3.70286 12.3539 3.29267 12.3436 2.88041L11.3439 2.9052C11.3509 3.18532 11.3022 3.46404 11.2008 3.72524L12.133 4.08726ZM12.3436 2.88041C12.3334 2.46816 12.2416 2.06202 12.0734 1.68549L11.1603 2.09326C11.2746 2.34911 11.337 2.62508 11.3439 2.9052L12.3436 2.88041ZM11.6169 1.88937C11.7542 1.40861 11.7538 1.40848 11.7533 1.40834C11.7531 1.4083 11.7527 1.40816 11.7523 1.40807C11.7517 1.40789 11.751 1.40771 11.7504 1.40752C11.749 1.40716 11.7477 1.40678 11.7462 1.4064C11.7434 1.40564 11.7404 1.40485 11.7372 1.40405C11.7309 1.40245 11.7239 1.40078 11.7161 1.39909C11.7007 1.39571 11.6826 1.39225 11.6617 1.38904C11.6199 1.38261 11.5674 1.37725 11.504 1.37556C11.3769 1.37216 11.2079 1.38354 10.9947 1.42908C10.5691 1.52001 9.97001 1.7465 9.17309 2.26125L9.71566 3.10125C10.435 2.63663 10.9221 2.46717 11.2037 2.40701C11.3441 2.37701 11.434 2.37404 11.4773 2.3752C11.4991 2.37578 11.5097 2.37742 11.5097 2.37742C11.5098 2.37743 11.5072 2.37704 11.5021 2.37592C11.4996 2.37537 11.4964 2.37463 11.4927 2.37368C11.4908 2.3732 11.4887 2.37267 11.4865 2.37209C11.4854 2.37179 11.4843 2.37148 11.4831 2.37116C11.4826 2.37099 11.482 2.37083 11.4814 2.37066C11.4811 2.37057 11.4806 2.37044 11.4804 2.3704C11.48 2.37027 11.4795 2.37014 11.6169 1.88937ZM9.57049 2.19742C8.21284 1.84354 6.78716 1.84354 5.42951 2.19742L5.68174 3.16508C6.87399 2.85431 8.12601 2.85431 9.31826 3.16508L9.57049 2.19742ZM5.82683 2.2612C5.02965 1.74649 4.43054 1.52002 4.00504 1.42909C3.79191 1.38354 3.62298 1.37216 3.49591 1.37556C3.4325 1.37725 3.38003 1.38261 3.33822 1.38905C3.31734 1.39226 3.2992 1.39573 3.28376 1.39911C3.27604 1.4008 3.26901 1.40247 3.26266 1.40408C3.25948 1.40488 3.25647 1.40567 3.25364 1.40643C3.25222 1.40681 3.25085 1.40719 3.24951 1.40756C3.24885 1.40774 3.24819 1.40793 3.24755 1.40811C3.24722 1.4082 3.24675 1.40833 3.24659 1.40838C3.24611 1.40851 3.24564 1.40865 3.38313 1.88937C3.52061 2.3701 3.52014 2.37023 3.51968 2.37037C3.51953 2.37041 3.51907 2.37054 3.51876 2.37062C3.51816 2.3708 3.51756 2.37096 3.51698 2.37112C3.51581 2.37145 3.51467 2.37176 3.51357 2.37206C3.51138 2.37265 3.50934 2.37318 3.50745 2.37365C3.50367 2.37461 3.5005 2.37535 3.49795 2.3759C3.49286 2.37702 3.49028 2.37742 3.49029 2.37742C3.4903 2.37741 3.49295 2.37701 3.49829 2.37653C3.50363 2.37605 3.51172 2.37549 3.52262 2.3752C3.56589 2.37405 3.65567 2.377 3.79606 2.40701C4.07758 2.46717 4.56473 2.63664 5.28442 3.1013L5.82683 2.2612ZM2.92658 1.68549C2.75843 2.06202 2.66658 2.46816 2.65636 2.88041L3.65606 2.9052C3.663 2.62508 3.72541 2.34911 3.83967 2.09326L2.92658 1.68549ZM2.65636 2.88041C2.64614 3.29267 2.71775 3.70286 2.86704 4.08726L3.79921 3.72524C3.69777 3.46404 3.64911 3.18532 3.65606 2.9052L2.65636 2.88041ZM2.9791 3.55317C2.66761 3.8655 2.42079 4.23621 2.25278 4.64407L3.1774 5.02495C3.29532 4.7387 3.46854 4.47853 3.68715 4.25933L2.9791 3.55317ZM2.25278 4.64407C2.08477 5.05193 1.99887 5.48892 2 5.93003L3 5.92747C2.99921 5.61789 3.05949 5.31119 3.1774 5.02495L2.25278 4.64407ZM2 5.92875C2 7.48166 2.45806 8.52573 3.23874 9.19657C3.99602 9.84729 4.97941 10.0764 5.87809 10.184L5.99691 9.19104C5.15121 9.08984 4.41586 8.88958 3.89048 8.43812C3.3885 8.00677 3 7.27584 3 5.92875H2ZM5.58455 9.33335C5.08499 9.83121 4.95633 10.4236 5.00134 11.0366L5.99866 10.9634C5.96867 10.5551 6.05126 10.28 6.29045 10.0417L5.58455 9.33335ZM5 11V14.5H6V11H5ZM10 14.5V13H9V14.5H10ZM10 13V10.9375H9V13H10Z" fill="black"/>
+            </svg>
+          </a
+        >
+      </li>
+      <li class="footer__menu__item ">
+        <a href="https://codepen.io/talmsnir" class="footer__menu__link" target="_blank">
+          <svg class='icon--codepen' width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 0.5L7.79062 0.0931333C7.61677 -0.0310444 7.38323 -0.0310444 7.20938 0.0931333L7.5 0.5ZM14.5 5.5H15C15 5.33852 14.922 5.18699 14.7906 5.09313L14.5 5.5ZM14.5 9.5L14.7906 9.90687C14.922 9.81301 15 9.66148 15 9.5H14.5ZM7.5 14.5L7.20938 14.9069C7.38323 15.031 7.61677 15.031 7.79062 14.9069L7.5 14.5ZM0.5 9.5H0C0 9.66148 0.0779828 9.81301 0.209381 9.90687L0.5 9.5ZM0.5 5.5L0.209381 5.09313C0.0779828 5.18699 0 5.33852 0 5.5H0.5ZM7.20938 0.906867L14.2094 5.90687L14.7906 5.09313L7.79062 0.0931333L7.20938 0.906867ZM14 5.5V9.5H15V5.5H14ZM14.2094 9.09313L7.20938 14.0931L7.79062 14.9069L14.7906 9.90687L14.2094 9.09313ZM7.79062 14.0931L0.790619 9.09313L0.209381 9.90687L7.20938 14.9069L7.79062 14.0931ZM1 9.5V5.5H0V9.5H1ZM0.790619 5.90687L7.79062 0.906867L7.20938 0.0931333L0.209381 5.09313L0.790619 5.90687ZM0.790619 9.90687L7.79062 4.90687L7.20938 4.09313L0.209381 9.09313L0.790619 9.90687ZM7.20938 4.90687L14.2094 9.90687L14.7906 9.09313L7.79062 4.09313L7.20938 4.90687ZM0.209381 5.90687L7.20938 10.9069L7.79062 10.0931L0.790619 5.09313L0.209381 5.90687ZM7.79062 10.9069L14.7906 5.90687L14.2094 5.09313L7.20938 10.0931L7.79062 10.9069ZM7 0.5V4.5H8V0.5H7ZM7 10.5V14.5H8V10.5H7Z" fill="black"/>
+            </svg>
+        </a>
+      </li>
+      <li class="footer__menu__item ">
+        <a href="https://www.linkedin.com/in/talmsnir/" class="footer__menu__link" target="_blank">
+          <svg class='icon--linkedin' width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 6V11M10.5 11V8.5C10.5 7.39543 9.60457 6.5 8.5 6.5C7.39543 6.5 6.5 7.39543 6.5 8.5V11V6M4 4.5H5M1.5 0.5H13.5C14.0523 0.5 14.5 0.947715 14.5 1.5V13.5C14.5 14.0523 14.0523 14.5 13.5 14.5H1.5C0.947716 14.5 0.5 14.0523 0.5 13.5V1.5C0.5 0.947716 0.947715 0.5 1.5 0.5Z" stroke="black"/>
+            </svg>
+        </a>
+      </li>
+      <li class="footer__menu__item ">
+        <a href="https://dribbble.com/TalmSnir" class="footer__menu__link" target="_blank">
+          <svg class='icon--dribbble' width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.83872 1.02372C8.18472 5.06546 9.93472 8.94589 10.5434 13.8057M0.532684 6.81966C6.51799 6.6821 9.9346 5.7374 12.5033 2.60444M2.70001 12.5948C5.92123 7.69241 9.87106 6.94493 14.4545 8.3011M14.5 7.5C14.5 3.63417 11.3658 0.5 7.5 0.5C3.63417 0.5 0.5 3.63417 0.5 7.5C0.5 11.3658 3.63417 14.5 7.5 14.5C11.3658 14.5 14.5 11.3658 14.5 7.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+      </li>
+     
+     
+    </ul>
+  </nav>
+  <a href='#header' class="footer__logo--vce">
+    <svg width="162" height="76" viewBox="0 0 162 76" fill="none" xmlns="http://www.w3.org/2000/svg" >
+      <path d="M103.708 36.9381C103.659 36.9163 98.8212 34.7348 92.5895 30.6933C92.386 30.3307 92.1622 29.9744 91.9114 29.6292C91.7261 29.3741 91.5276 29.1255 91.3168 28.8844C91.629 28.813 91.9356 28.7285 92.2354 28.6309C98.185 26.698 101.102 19.8506 101.224 19.5599C101.501 18.8965 101.252 18.1305 100.638 17.7566C100.403 17.614 95.5297 14.6961 90.3445 15.2221C92.9469 11.8706 95.0277 8.43525 96.5555 4.96148C96.5693 4.93024 96.5821 4.89842 96.5934 4.86621C97.4939 2.35194 97.3835 0.882138 96.2464 0.240472C94.7974 -0.57757 93.3235 0.739912 91.1096 3.45637C90.602 4.07941 90.6953 4.99602 91.3186 5.5038C91.8264 5.91767 92.5293 5.93164 93.0464 5.58588C91.5326 8.60891 89.5645 11.603 87.1696 14.5347C86.8576 8.54391 81.5675 3.93175 81.3358 3.73287C80.7904 3.26447 79.9848 3.26447 79.4395 3.73287C79.2131 3.92748 74.1593 8.33668 73.6374 14.1274C71.3912 11.3261 69.5349 8.4692 68.0909 5.58568C68.6084 5.93261 69.3114 5.91806 69.8194 5.504C70.4424 4.99621 70.5359 4.0796 70.0284 3.45656C67.815 0.739718 66.341 -0.576212 64.8917 0.240472C63.7547 0.882332 63.6441 2.35213 64.5442 4.86641C64.5557 4.89861 64.5685 4.93044 64.5823 4.96168C66.1178 8.45252 68.2112 11.9044 70.8318 15.272C65.4998 14.5461 60.3783 17.6109 60.1381 17.757C59.524 18.1311 59.2751 18.8973 59.5522 19.5607C59.6734 19.8512 62.5915 26.6984 68.5411 28.6311C68.8411 28.7287 69.1474 28.8131 69.4598 28.8845C69.2491 29.1257 69.051 29.3741 68.8655 29.6294C68.5326 30.0874 68.245 30.5637 67.9945 31.0509C62.0468 34.8542 57.4762 36.9175 57.4298 36.9383C56.6966 37.2668 56.3683 38.1275 56.6966 38.8609C56.9385 39.4013 57.4694 39.7221 58.0257 39.7221C58.2244 39.7221 58.4264 39.6811 58.6196 39.5948C58.7842 39.521 62.0329 38.0565 66.6813 35.2836C66.1485 38.8737 66.8775 42.0508 66.925 42.2513C67.0818 42.9118 67.6716 43.3708 68.3401 43.3708C68.3795 43.3708 68.4192 43.3693 68.4592 43.3662C68.773 43.3406 76.1862 42.6814 79.8637 37.6197C80.049 37.3647 80.2238 37.0995 80.3881 36.8246C80.5525 37.0995 80.7273 37.3646 80.9126 37.6197C84.5905 42.6818 92.0037 43.3406 92.3175 43.3662C93.0367 43.4221 93.686 42.9508 93.8517 42.2515C93.9002 42.0464 94.659 38.7311 94.0564 35.0435C98.9136 37.9699 102.345 39.5173 102.519 39.595C102.712 39.6813 102.914 39.7222 103.113 39.7222C103.669 39.7222 104.2 39.4017 104.442 38.8611C104.77 38.1275 104.442 37.2664 103.708 36.9381ZM97.9411 19.6323C96.9442 21.4372 94.7112 24.7666 91.3364 25.8629C90.2547 26.2143 89.0362 26.3359 87.7173 26.2248C87.0423 26.1706 86.4196 26.5827 86.2111 27.2252C86.1622 27.3756 86.14 27.5294 86.1408 27.6812L85.8401 25.9283L89.1805 22.6724C89.5771 22.2857 89.7198 21.7073 89.5486 21.1805C89.3775 20.6535 88.9221 20.2697 88.3737 20.1901L86.3059 19.8896C87.1537 19.24 88.0348 18.7617 88.9337 18.4696C92.293 17.3784 96.0697 18.7607 97.9411 19.6323ZM82.8421 25.6663L83.2614 28.1119L81.0653 26.9572C80.8532 26.8458 80.6208 26.7902 80.3881 26.7902C80.1555 26.7902 79.9229 26.8458 79.711 26.9572L77.5153 28.1119L77.9346 25.6663C78.0155 25.1942 77.8589 24.7126 77.5161 24.3781L75.7393 22.6464L78.1946 22.2896C78.6686 22.2209 79.0784 21.9228 79.2903 21.4935L80.3881 19.2685L81.4862 21.4935C81.6983 21.923 82.1079 22.2207 82.5819 22.2896L85.0372 22.6464L83.2604 24.3781C82.9176 24.7126 82.761 25.1942 82.8421 25.6663ZM80.3903 6.87755C81.7988 8.38344 84.2748 11.5361 84.2748 15.0851C84.2748 16.2228 84.014 17.4188 83.5 18.6402C83.4702 18.711 83.448 18.7834 83.4302 18.8558L81.6932 15.336C81.448 14.8393 80.9421 14.5248 80.3881 14.5248C79.8342 14.5248 79.3283 14.8393 79.0831 15.336L77.3459 18.8566C77.3244 18.7683 77.2966 18.6811 77.2584 18.5975C76.756 17.3908 76.5015 16.2094 76.5015 15.0851C76.5015 11.5526 78.983 8.3881 80.3903 6.87755ZM69.4402 25.8631C66.0812 24.7718 63.8383 21.4339 62.8363 19.6282C64.7039 18.7543 68.4674 17.3734 71.8428 18.47C72.7419 18.7623 73.6232 19.2402 74.4709 19.8896L72.4027 20.1901C71.8546 20.2697 71.399 20.6537 71.2279 21.1805C71.0567 21.7073 71.1995 22.2855 71.5959 22.6724L74.9364 25.9283L74.6372 27.6734C74.6366 26.9417 74.092 26.3214 73.363 26.2302C73.2522 26.2168 73.1412 26.2158 73.0316 26.2267C71.7225 26.335 70.514 26.2121 69.4402 25.8631ZM91.2344 40.2659C89.2098 39.8753 85.3534 38.7804 83.2672 35.9087C82.6079 35.001 82.1201 33.8989 81.8174 32.6323C81.7144 32.102 81.3183 31.6518 80.7632 31.5038C80.0032 31.3022 79.2199 31.7397 78.994 32.4928C78.9837 32.5271 78.9746 32.5615 78.9671 32.5964C78.6646 33.8786 78.174 34.9929 77.5087 35.9087C75.4335 38.7651 71.5692 39.867 69.5413 40.2626C69.2906 38.2107 69.1447 34.1954 71.2197 31.3398C71.8792 30.4318 72.7778 29.6267 73.891 28.9466C74.2008 28.7738 74.437 28.4901 74.5548 28.1519L74.1475 30.5263C74.0538 31.0723 74.2784 31.6239 74.7265 31.9497C75.1747 32.2749 75.7688 32.3178 76.2589 32.0603L80.3874 29.8894L84.5162 32.0603C84.7292 32.1722 84.9617 32.2273 85.1932 32.2273H85.1974C86.0011 32.2272 86.6523 31.5758 86.6523 30.7721C86.6523 30.6501 86.6374 30.5317 86.609 30.4184L86.2204 28.1529C86.329 28.4645 86.5421 28.7394 86.8407 28.9201C87.9737 29.6056 88.8872 30.4197 89.5558 31.3398C91.6329 34.1976 91.4853 38.2165 91.2344 40.2659Z" fill="#095D90"/>
+      <path d="M4.48 57.056V62.656H12V66.208H4.48V72.128H12.96V75.776H0V53.408H12.96V57.056H4.48Z" fill="#095D90"/>
+      <path d="M22.7913 72.224H30.1513V75.776H18.3112V53.44H22.7913V72.224Z" fill="#095D90"/>
+      <path d="M38.7588 57.056V62.656H46.2788V66.208H38.7588V72.128H47.2388V75.776H34.2787V53.408H47.2388V57.056H38.7588Z" fill="#095D90"/>
+      <path d="M76.942 53.44V75.776H72.462V61.248L66.478 75.776H63.086L57.07 61.248V75.776H52.59V53.44H57.678L64.782 70.048L71.886 53.44H76.942Z" fill="#095D90"/>
+      <path d="M87.1312 57.056V62.656H94.6513V66.208H87.1312V72.128H95.6113V75.776H82.6513V53.408H95.6113V57.056H87.1312Z" fill="#095D90"/>
+      <path d="M120.067 75.776H115.586L105.442 60.448V75.776H100.963V53.408H105.442L115.586 68.768V53.408H120.067V75.776Z" fill="#095D90"/>
+      <path d="M140.974 53.44V57.056H135.022V75.776H130.542V57.056H124.59V53.44H140.974Z" fill="#095D90"/>
+      <path d="M153.234 76C151.677 76 150.269 75.7333 149.01 75.2C147.773 74.6667 146.792 73.8987 146.066 72.896C145.341 71.8933 144.968 70.7093 144.947 69.344H149.747C149.811 70.2613 150.131 70.9867 150.707 71.52C151.304 72.0533 152.115 72.32 153.139 72.32C154.184 72.32 155.005 72.0747 155.603 71.584C156.2 71.072 156.499 70.4107 156.499 69.6C156.499 68.9387 156.296 68.3947 155.891 67.968C155.485 67.5413 154.973 67.2107 154.354 66.976C153.757 66.72 152.925 66.4427 151.859 66.144C150.408 65.7173 149.224 65.3013 148.307 64.896C147.411 64.4693 146.632 63.84 145.971 63.008C145.331 62.1547 145.01 61.024 145.01 59.616C145.01 58.2933 145.341 57.1413 146.003 56.16C146.664 55.1787 147.592 54.432 148.786 53.92C149.981 53.3867 151.347 53.12 152.883 53.12C155.187 53.12 157.053 53.6853 158.483 54.816C159.933 55.9253 160.733 57.4827 160.883 59.488H155.954C155.912 58.72 155.581 58.0907 154.962 57.6C154.365 57.088 153.565 56.832 152.562 56.832C151.688 56.832 150.984 57.056 150.451 57.504C149.939 57.952 149.682 58.6027 149.682 59.456C149.682 60.0533 149.875 60.5547 150.259 60.96C150.664 61.344 151.154 61.664 151.73 61.92C152.328 62.1547 153.16 62.432 154.227 62.752C155.677 63.1787 156.861 63.6053 157.779 64.032C158.696 64.4587 159.485 65.0987 160.147 65.952C160.808 66.8053 161.139 67.9253 161.139 69.312C161.139 70.5067 160.829 71.616 160.211 72.64C159.592 73.664 158.685 74.4853 157.491 75.104C156.296 75.7013 154.877 76 153.234 76Z" fill="#095D90"/>
+      </svg>
+      
+  </a>
+  <div class="footer__rights"><span>designed and coded by <strong>tal snir</strong></span><span>&copy 2021 tal snir all rights reserved   </span></div>
+</div>
+
+</footer>
+ <!---=============================================
+    =            Section-js            =
+    =============================================-->
+    <!-- <script src="prism.js"></script> -->
+    <script src="prism.js" ></script>
+    <script src="script.js"></script>
+   
+
+  </body>
+</html>
+
+<!-- 
+  data-type=elementType, 
+  data-animation=animationName
+datat
+-->
+<!-- addign welcome modal with explanation on the icons and copy an things -->
+
+<!-- <div class="element__container {if has effects:effect--focus effect--hover}" data-type="{element's type} "">
+  <div  class="{element-type-id} element"</div>
+  <label for="{element-type-id}-default-{element-type}" class="{element-type-id} element"</div>
+  <input type='text' name='{element-type-id}-default-{element-type}" id="{element-type-id}-default-{element-type}" class="{element-type-id} element"</div> -->

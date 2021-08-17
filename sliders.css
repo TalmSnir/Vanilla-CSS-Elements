@@ -1,0 +1,328 @@
+/*=============================================
+=            slider-1          =
+=============================================*/
+.slider-1 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="slider-1-range-default"] {
+  appearance: none;
+  box-sizing: content-box;
+  --slider-inline-size: 10rem;
+  --slider-block-size: 1rem;
+  --padding: 0.2rem;
+  block-size: var(--slider-block-size);
+  inline-size: var(--slider-inline-size);
+  border-radius: var(--vce-border-radius-pill);
+  background: var(--vce-clr-primary-surface);
+  padding: var(--padding);
+  cursor: pointer;
+  position: relative;
+}
+input[name="slider-1-range-default"]:focus {
+  outline: 0;
+}
+input[name="slider-1-range-default"]:hover {
+  opacity: 0.9;
+}
+
+input[name="slider-1-range-default"]::-webkit-slider-thumb {
+  --thumb-size: var(--slider-block-size);
+  appearance: none;
+  box-sizing: content-box;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-top);
+  transition: all var(--vce-animation-time-sm);
+  position: relative;
+}
+input[name="slider-1-range-default"]::-moz-range-thumb {
+  --thumb-size: var(--slider-block-size);
+  appearance: none;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-top);
+  transition: all var(--vce-animation-time-sm);
+  position: relative;
+}
+
+input[name="slider-1-range-default"]::-webkit-slider-thumb:hover {
+  border: 3px solid var(--vce-clr-tertiary-surface);
+  transform: scale(1.4);
+}
+input[name="slider-1-range-default"]::-moz-range-thumb:hover {
+  border: 3px solid var(--vce-clr-tertiary-surface);
+  transform: scale(1.4);
+}
+input[name="slider-1-range-default"]:is(:hover, :focus)::before {
+  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
+}
+input[name="slider-1-range-default"]::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--padding) * -2);
+  left: calc(var(--padding) * -2);
+  inline-size: calc(var(--slider-inline-size) + var(--padding) * 6);
+  block-size: calc(var(--slider-block-size) + var(--padding) * 6);
+  border: 2px solid var(--vce-clr-secondary-surface);
+  border-radius: var(--vce-border-radius-pill);
+  opacity: 0;
+}
+input[name="slider-1-range-default"]:focus::after {
+  opacity: 1;
+}
+/*=============================================
+=            slider-2          =
+=============================================*/
+.slider-2 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="slider-2-range-default"] {
+  appearance: none;
+  box-sizing: content-box;
+  --slider-inline-size: 10rem;
+  --slider-block-size: 1rem;
+  --padding: 0.2rem;
+  block-size: var(--slider-block-size);
+  inline-size: var(--slider-inline-size);
+  background: var(--vce-clr-primary-surface);
+  padding: var(--padding);
+  cursor: pointer;
+  position: relative;
+}
+input[name="slider-2-range-default"]:focus {
+  outline-offset: calc(var(--padding) * 4);
+  outline: 2px solid var(--vce-clr-primary-surface);
+}
+input[name="slider-2-range-default"]:hover {
+  opacity: 0.9;
+}
+
+input[name="slider-2-range-default"]::-webkit-slider-thumb {
+  --thumb-size: calc(var(--slider-block-size) + var(--padding) * 4);
+  appearance: none;
+  box-sizing: content-box;
+  inline-size: calc(var(--thumb-size) / 2);
+  block-size: var(--thumb-size);
+  border: 2px solid var(--vce-clr-primary-surface);
+  background: var(--vce-clr-primary-top);
+  transition: all var(--vce-animation-time-sm);
+  position: relative;
+}
+input[name="slider-2-range-default"]::-moz-range-thumb {
+  --thumb-size: var(--slider-block-size);
+  appearance: none;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-top);
+  transition: all var(--vce-animation-time-sm);
+  position: relative;
+}
+
+input[name="slider-2-range-default"]::-webkit-slider-thumb:hover {
+  border: 3px solid var(--vce-clr-tertiary-surface);
+  transform: scale(1.2);
+}
+input[name="slider-2-range-default"]::-moz-range-thumb:hover {
+  border: 3px solid var(--vce-clr-tertiary-surface);
+  transform: scale(1.4);
+}
+input[name="slider-2-range-default"]:is(:hover, :focus)::before {
+  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
+}
+/*=============================================
+=            slider-3          =
+=============================================*/
+.slider-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--vce-gap-xs);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="slider-3-range-default"] {
+  appearance: none;
+  box-sizing: content-box;
+  --slider-inline-size: 10rem;
+  --slider-block-size: 1rem;
+  --padding: 0.2rem;
+  block-size: var(--slider-block-size);
+  inline-size: var(--slider-inline-size);
+  border-radius: var(--vce-border-radius-pill);
+  background: var(--vce-clr-primary-surface);
+  padding: var(--padding);
+  cursor: pointer;
+  position: relative;
+}
+input[name="slider-3-range-default"]:focus {
+  outline: 0;
+}
+input[name="slider-3-range-default"]:hover {
+  opacity: 0.9;
+}
+
+input[name="slider-3-range-default"]::-webkit-slider-thumb {
+  --thumb-size: var(--slider-block-size);
+  appearance: none;
+  box-sizing: content-box;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-top);
+  transition: all var(--vce-animation-time-sm);
+  position: relative;
+}
+input[name="slider-3-range-default"]::-moz-range-thumb {
+  --thumb-size: var(--slider-block-size);
+  appearance: none;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-top);
+  transition: all var(--vce-animation-time-sm);
+  position: relative;
+}
+
+input[name="slider-3-range-default"]::-webkit-slider-thumb:hover {
+  border: 3px solid var(--vce-clr-tertiary-surface);
+  transform: scale(1.4);
+}
+input[name="slider-3-range-default"]::-moz-range-thumb:hover {
+  border: 3px solid var(--vce-clr-tertiary-surface);
+  transform: scale(1.4);
+}
+input[name="slider-3-range-default"]:is(:hover, :focus)::before {
+  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
+}
+input[name="slider-3-range-default"]::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--padding) * -2);
+  left: calc(var(--padding) * -2);
+  inline-size: calc(var(--slider-inline-size) + var(--padding) * 6);
+  block-size: calc(var(--slider-block-size) + var(--padding) * 6);
+  border: 2px solid var(--vce-clr-secondary-surface);
+  border-radius: var(--vce-border-radius-pill);
+  opacity: 0;
+}
+input[name="slider-3-range-default"]:focus::after {
+  opacity: 1;
+}
+output {
+  font-size: var(--vce-fs-label);
+  color: currentColor;
+}
+/*=============================================
+=            slider-4          =
+=============================================*/
+.slider-4 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="slider-4-range-default"] {
+  appearance: none;
+  box-sizing: content-box;
+  --slider-inline-size: 10rem;
+  --slider-block-size: 0.1rem;
+  --padding: 0.2rem;
+  block-size: var(--slider-block-size);
+  inline-size: var(--slider-inline-size);
+  border-radius: var(--vce-border-radius-pill);
+  background: linear-gradient(
+    to right,
+    var(--vce-clr-secondary-surface),
+    var(--vce-clr-primary-surface)
+  );
+  padding: var(--padding);
+  cursor: pointer;
+  position: relative;
+}
+input[name="slider-4-range-default"]:focus {
+  outline: 0;
+}
+input[name="slider-4-range-default"]:hover {
+  opacity: 0.9;
+}
+
+input[name="slider-4-range-default"]::-webkit-slider-thumb {
+  --thumb-size: 1.5rem;
+  appearance: none;
+  box-sizing: content-box;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-container-background);
+  border: 4px solid var(--vce-clr-primary-surface);
+  transition: all var(--vce-animation-time-sm);
+  position: relative;
+}
+input[name="slider-4-range-default"]::-moz-range-thumb {
+  --thumb-size: 1.5rem;
+  appearance: none;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-container-background);
+  border: 4px solid var(--vce-clr-primary-surface);
+  transition: all var(--vce-animation-time-sm);
+  position: relative;
+}
+
+input[name="slider-4-range-default"]::-webkit-slider-thumb:hover {
+  border: 3px solid var(--vce-clr-tertiary-surface);
+}
+input[name="slider-4-range-default"]::-moz-range-thumb:hover {
+  border: 3px solid var(--vce-clr-tertiary-surface);
+}
+input[name="slider-4-range-default"]:is(:hover, :focus)::before {
+  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
+}
+input[name="slider-4-range-default"]::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--padding) * -2);
+  left: calc(var(--padding) * -2);
+  inline-size: calc(var(--slider-inline-size) + var(--padding) * 6);
+  block-size: calc(var(--slider-block-size) + var(--padding) * 6);
+  border: 2px solid var(--vce-clr-secondary-surface);
+  border-radius: var(--vce-border-radius-pill);
+  opacity: 0;
+  z-index: var(--vce-z-behind);
+}
+input[name="slider-4-range-default"]:focus::after {
+  opacity: 1;
+}

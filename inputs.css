@@ -1,0 +1,186 @@
+/*=============================================
+=            input-1            =
+=============================================*/
+.input-1 {
+  position: relative;
+  width: 100%;
+}
+input[name="input-1-input-default"] {
+  width: 100%;
+  font-size: var(--vce-fs-text-1);
+  padding: var(--vce-pxs);
+  background: var(--vce-clr-container-background);
+  color: var(--vce-clr-primary-surface);
+  border: 2px solid var(--vce-clr-primary-surface);
+  border-radius: var(--vce-border-radius);
+  transition: border-color var(--vce-animation-time-xs);
+}
+label[for="input-1-input-default"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: var(--vce-pxs);
+  font-size: 1rem;
+  font-weight: var(--vce-fw-md);
+  text-transform: capitalize;
+  color: var(--vce-clr-primary-surface);
+  transition: all var(--vce-animation-time-xs);
+}
+input[name="input-1-input-default"]:not(:placeholder-shown)
+  + label[for="input-1-input-default"] {
+  top: calc(-1 * 1rem / 0.8 / 2);
+  background: var(--vce-clr-container-background);
+  transform: scale(0.8);
+}
+input[name="input-1-input-default"]:focus {
+  outline: 0;
+  border-color: var(--vce-clr-tertiary-surface);
+}
+input[name="input-1-input-default"]:focus + label[for="input-1-input-default"] {
+  color: var(--vce-clr-tertiary-surface);
+}
+/*=============================================
+=            input-2            =
+=============================================*/
+.input-2 {
+  position: relative;
+  width: 100%;
+}
+input[name="input-2-input-default"] {
+  width: 100%;
+  font-size: var(--vce-fs-text-1);
+  padding: var(--vce-pxs);
+  background: var(--vce-clr-container-background);
+  color: var(--vce-clr-primary-surface);
+  border: 2px solid var(--vce-clr-primary-surface);
+  border-radius: var(--vce-border-radius);
+  transition: border-color var(--vce-animation-time-xs);
+}
+label[for="input-2-input-default"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  padding-inline-start: var(--vce-pxs);
+  width: 100%;
+  height: max-content;
+  font-size: 1rem;
+  font-weight: var(--vce-fw-md);
+  text-transform: capitalize;
+  color: var(--vce-clr-primary-surface);
+  transition: all var(--vce-animation-time-xs);
+}
+input[name="input-2-input-default"]:not(:placeholder-shown)
+  + label[for="input-2-input-default"] {
+  top: 100%;
+  transform: translateY(-100%);
+  background: var(--vce-clr-primary-surface);
+  font-size: calc(var(--vce-fs-text-1) * 0.7);
+  color: var(--vce-clr-primary-top);
+  border-bottom-left-radius: var(--vce-border-radius);
+  border-bottom-right-radius: var(--vce-border-radius);
+}
+input[name="input-2-input-default"]:focus {
+  outline: 0;
+  border-color: var(--vce-clr-tertiary-surface);
+}
+input[name="input-2-input-default"]:focus:placeholder-shown
+  + label[for="input-2-input-default"] {
+  color: var(--vce-clr-tertiary-surface);
+}
+/*=============================================
+=            input-3            =
+=============================================*/
+.input-3 {
+  position: relative;
+  width: 100%;
+}
+input[name="input-3-input-default"] {
+  width: 100%;
+  font-size: var(--vce-fs-text-1);
+  padding: var(--vce-pxs);
+  background: var(--vce-clr-container-background);
+  color: var(--vce-clr-primary-surface);
+  border: 2px solid var(--vce-clr-primary-surface);
+  border-radius: var(--vce-border-radius);
+  transition: border-color var(--vce-animation-time-xs);
+}
+label[for="input-3-input-default"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  padding: var(--vce-pxs);
+  width: max-content;
+  height: max-content;
+  font-size: 1rem;
+  font-weight: var(--vce-fw-md);
+  text-transform: capitalize;
+  color: var(--vce-clr-primary-surface);
+  transition: all var(--vce-animation-time-xs);
+}
+input[name="input-3-input-default"]:not(:placeholder-shown)
+  + label[for="input-3-input-default"] {
+  left: 100%;
+  transform: translate(-100%, -50%);
+  background: var(--vce-clr-primary-surface);
+  color: var(--vce-clr-primary-top);
+  border-top-right-radius: var(--vce-border-radius);
+  border-bottom-right-radius: var(--vce-border-radius);
+}
+input[name="input-3-input-default"]:focus {
+  outline: 0;
+  border-color: var(--vce-clr-tertiary-surface);
+}
+input[name="input-3-input-default"]:focus:placeholder-shown
+  + label[for="input-3-input-default"] {
+  color: var(--vce-clr-tertiary-surface);
+}
+/*=============================================
+=            input-4            =
+=============================================*/
+.input-4 {
+  position: relative;
+  width: 100%;
+}
+input[name="input-3-input-default"] {
+  width: 100%;
+  font-size: var(--vce-fs-text-1);
+  padding: var(--vce-pxs);
+  background: var(--vce-clr-container-background);
+  color: var(--vce-clr-primary-surface);
+  border: 2px solid var(--vce-clr-primary-surface);
+  border-radius: var(--vce-border-radius);
+  transition: border-color var(--vce-animation-time-xs);
+}
+label[for="input-3-input-default"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  padding: var(--vce-pxs);
+  width: max-content;
+  height: max-content;
+  font-size: 1rem;
+  font-weight: var(--vce-fw-md);
+  text-transform: capitalize;
+  color: var(--vce-clr-primary-surface);
+  transition: all var(--vce-animation-time-xs);
+}
+input[name="input-3-input-default"]:not(:placeholder-shown)
+  + label[for="input-3-input-default"] {
+  left: 100%;
+  transform: translate(-100%, -50%);
+  background: var(--vce-clr-primary-surface);
+  color: var(--vce-clr-primary-top);
+  border-top-right-radius: var(--vce-border-radius);
+  border-bottom-right-radius: var(--vce-border-radius);
+}
+input[name="input-3-input-default"]:focus {
+  outline: 0;
+  border-color: var(--vce-clr-tertiary-surface);
+}
+input[name="input-3-input-default"]:focus:placeholder-shown
+  + label[for="input-3-input-default"] {
+  color: var(--vce-clr-tertiary-surface);
+}

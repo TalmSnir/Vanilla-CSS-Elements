@@ -1,0 +1,619 @@
+/*=============================================
+=            toggle switch-1            =
+=============================================*/
+
+.switch-1 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="switch-1-checkbox-default"] {
+  appearance: none;
+  box-sizing: content-box;
+  --switch-inline-size: 4.4rem;
+  --switch-block-size: calc(var(--switch-inline-size) / 2);
+  --padding: 0.2rem;
+  block-size: var(--switch-block-size);
+  inline-size: var(--switch-inline-size);
+  border-radius: var(--vce-border-radius-pill);
+  background: var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+}
+input[name="switch-1-checkbox-default"]:is(:hover, :focus) {
+  outline: 0;
+}
+input[name="switch-1-checkbox-default"]::before {
+  --thumb-size: var(--switch-block-size);
+  content: "";
+  grid-area: checkbox;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-top);
+  transition: all var(--vce-animation-time-sm);
+}
+input[name="switch-1-checkbox-default"]:is(:hover, :focus)::before {
+  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
+}
+input[name="switch-1-checkbox-default"]::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--padding) * -2);
+  left: calc(var(--padding) * -2);
+  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
+  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
+  border: 2px solid var(--vce-clr-secondary-surface);
+  border-radius: var(--vce-border-radius-pill);
+  opacity: 0;
+}
+input[name="switch-1-checkbox-default"]:focus::after {
+  opacity: 1;
+}
+input[name="switch-1-checkbox-default"]:checked::before {
+  transform: translateX(100%);
+}
+/*=============================================
+=            toggle switch-2            =
+=============================================*/
+
+.switch-2 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="switch-2-checkbox-default"] {
+  appearance: none;
+  box-sizing: content-box;
+  --switch-inline-size: 4.4rem;
+  --switch-block-size: calc(var(--switch-inline-size) / 2);
+  --padding: 0.2rem;
+  block-size: var(--switch-block-size);
+  inline-size: var(--switch-inline-size);
+  background: var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+}
+input[name="switch-2-checkbox-default"]::before {
+  --thumb-size: var(--switch-block-size);
+  content: "";
+  grid-area: checkbox;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  background: var(--vce-clr-primary-top);
+  transition: all var(--vce-animation-time-sm);
+}
+input[name="switch-2-checkbox-default"]:is(:hover, :focus)::before {
+  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
+}
+input[name="switch-2-checkbox-default"]:focus {
+  outline-offset: 4px;
+  outline: 2px solid var(--vce-clr-primary-surface);
+}
+
+input[name="switch-2-checkbox-default"]:checked::before {
+  transform: translateX(100%);
+}
+/*=============================================
+=            toggle switch-3            =
+=============================================*/
+
+.switch-3 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  color: var(--vce-clr-text);
+}
+
+input[name="switch-3-checkbox-default"] {
+  appearance: none;
+  box-sizing: content-box;
+  --switch-inline-size: 4.4rem;
+  --switch-block-size: calc(var(--switch-inline-size) / 2);
+  --padding: 0.2rem;
+  block-size: var(--switch-block-size);
+  inline-size: var(--switch-inline-size);
+  background: var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+}
+input[name="switch-3-checkbox-default"]::before {
+  --thumb-size: var(--switch-block-size);
+  content: "";
+  grid-area: checkbox;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  background: var(--vce-clr-primary-top);
+  transition: all var(--vce-animation-time-sm);
+}
+input[name="switch-3-checkbox-default"]:is(:hover, :focus)::before {
+  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
+}
+input[name="switch-3-checkbox-default"]:focus {
+  outline-offset: 4px;
+  outline: 2px solid var(--vce-clr-primary-surface);
+}
+
+input[name="switch-3-checkbox-default"]:checked {
+  border-radius: var(--vce-border-radius-pill);
+}
+input[name="switch-3-checkbox-default"]:checked::before {
+  border-radius: var(--vce-border-radius-circle);
+  transform: translateX(100%);
+}
+
+/*=============================================
+=            toggle switch-4            =
+=============================================*/
+
+.switch-4 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="switch-4-checkbox-default"] {
+  appearance: none;
+  box-sizing: content-box;
+  --switch-inline-size: 4.4rem;
+  --switch-block-size: calc(var(--switch-inline-size) / 2);
+  --padding: 0.2rem;
+  block-size: var(--switch-block-size);
+  inline-size: var(--switch-inline-size);
+  border-radius: var(--vce-border-radius-pill);
+  background: var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+  transition: all var(--vce-animation-time-lg);
+}
+input[name="switch-4-checkbox-default"]::before {
+  --thumb-size: var(--switch-block-size);
+  content: "";
+  grid-area: checkbox;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-top);
+  transition: all var(--vce-animation-time-sm);
+}
+input[name="switch-4-checkbox-default"]:is(:hover, :focus) {
+  outline: 0;
+}
+input[name="switch-4-checkbox-default"]:is(:hover, :focus)::before {
+  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
+}
+input[name="switch-4-checkbox-default"]::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--padding) * -2);
+  left: calc(var(--padding) * -2);
+  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
+  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
+  border: 2px solid var(--vce-clr-secondary-surface);
+  border-radius: var(--vce-border-radius-pill);
+  opacity: 0;
+}
+input[name="switch-4-checkbox-default"]:focus::after {
+  opacity: 1;
+}
+input[name="switch-4-checkbox-default"]:checked::before {
+  transform: translateX(100%);
+}
+input[name="switch-4-checkbox-default"]:checked {
+  transform: rotate(720deg);
+}
+/*=============================================
+=            toggle switch-5            =
+=============================================*/
+.switch-5 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="switch-5-checkbox-default"] {
+  appearance: none;
+  box-sizing: content-box;
+  --switch-inline-size: 4.4rem;
+  --switch-block-size: calc(var(--switch-inline-size) / 2);
+  --padding: 0.2rem;
+  block-size: var(--switch-block-size);
+  inline-size: var(--switch-inline-size);
+  border-radius: var(--vce-border-radius-pill);
+  background: var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+}
+input[name="switch-5-checkbox-default"]::before {
+  --thumb-size: var(--switch-block-size);
+  content: "";
+  background-color: var(--vce-clr-primary-top);
+  background-image: url("data:image/svg+xml;utf8,<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M8.53333 16L14.9333 21.3333L23.4667 10.6667' stroke='hsl(177, 90%, 59%)' stroke-width='2'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: checkbox;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  transition: all var(--vce-animation-time-sm);
+}
+input[name="switch-5-checkbox-default"]:is(:hover, :focus) {
+  outline: 0;
+}
+input[name="switch-5-checkbox-default"]:is(:hover, :focus)::before {
+  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
+}
+input[name="switch-5-checkbox-default"]::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--padding) * -2);
+  left: calc(var(--padding) * -2);
+  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
+  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
+  border: 2px solid var(--vce-clr-secondary-surface);
+  border-radius: var(--vce-border-radius-pill);
+  opacity: 0;
+}
+input[name="switch-5-checkbox-default"]:focus::after {
+  opacity: 1;
+}
+input[name="switch-5-checkbox-default"]:checked::before {
+  transform: translateX(100%);
+  background-image: url('data:image/svg+xml;utf8,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.59998 9.60001L22.4 22.4M9.59998 22.4L22.4 9.60001" stroke="hsl(177, 90%, 59%)" stroke-width="2"/></svg>');
+}
+
+input[name="switch-5-checkbox-default"]:checked::before {
+  transform: translateX(100%) rotateZ(720deg);
+}
+input[name="switch-5-checkbox-default"]:checked::before .on {
+  opacity: 1;
+}
+input[name="switch-5-checkbox-default"]:checked::before .off {
+  opacity: 0;
+}
+/*=============================================
+=            toggle switch-6            =
+=============================================*/
+.switch-6 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="switch-6-checkbox-default"] {
+  appearance: none;
+  box-sizing: content-box;
+  --switch-inline-size: 4.4rem;
+  --switch-block-size: calc(var(--switch-inline-size) / 2);
+  --padding: 0.2rem;
+  block-size: var(--switch-block-size);
+  inline-size: var(--switch-inline-size);
+  border-radius: var(--vce-border-radius-pill);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+  transition: border-color var(--vce-animation-time-sm);
+}
+input[name="switch-6-checkbox-default"]::before {
+  --thumb-size: var(--switch-block-size);
+  content: "";
+  grid-area: checkbox;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-surface);
+  transition: all var(--vce-animation-time-sm);
+}
+input[name="switch-6-checkbox-default"]:is(:hover, :focus) {
+  outline: 0;
+}
+input[name="switch-6-checkbox-default"]:is(:hover, :focus)::before {
+  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
+}
+input[name="switch-6-checkbox-default"]::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--padding) * -2);
+  left: calc(var(--padding) * -2);
+  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
+  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
+  border: 2px solid var(--vce-clr-secondary-surface);
+  border-radius: var(--vce-border-radius-pill);
+  opacity: 0;
+}
+input[name="switch-6-checkbox-default"]:focus::after {
+  opacity: 1;
+}
+input[name="switch-6-checkbox-default"]:checked::before {
+  transform: translateX(100%);
+  background: var(--vce-clr-secondary-surface);
+}
+input[name="switch-6-checkbox-default"]:checked {
+  border-color: var(--vce-clr-secondary-surface);
+}
+/*=============================================
+=            toggle switch-7            =
+=============================================*/
+.switch-7 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="switch-7-checkbox-default"] {
+  appearance: none;
+  box-sizing: content-box;
+  --switch-inline-size: 4.4rem;
+  --switch-block-size: calc(var(--switch-inline-size) / 2);
+  --padding: 4px;
+  block-size: var(--switch-block-size);
+  inline-size: var(--switch-inline-size);
+  border-radius: var(--vce-border-radius-pill);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+  transition: all var(--vce-animation-time-sm);
+}
+input[name="switch-7-checkbox-default"]::before {
+  --thumb-size: var(--switch-block-size);
+  content: "";
+  grid-area: checkbox;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-surface);
+  transition: transform var(--vce-animation-time-sm)
+    var(--vce-animation-time-sm);
+}
+input[name="switch-7-checkbox-default"]:is(:hover, :focus) {
+  outline: 0;
+}
+input[name="switch-7-checkbox-default"]:is(:hover, :focus)::before {
+  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
+}
+input[name="switch-7-checkbox-default"]::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--padding) * -2);
+  left: calc(var(--padding) * -2);
+  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
+  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
+  border: var(--padding) solid var(--vce-clr-secondary-surface);
+  border-radius: var(--vce-border-radius-pill);
+  opacity: 0;
+}
+input[name="switch-7-checkbox-default"]:focus::after {
+  opacity: 1;
+}
+input[name="switch-7-checkbox-default"]:checked::before {
+  transform: translateX(100%);
+}
+input[name="switch-7-checkbox-default"]:checked {
+  transform-origin: calc(var(--thumb-size) / 2 + var(--padding)) 50%;
+  transform: rotateZ(90deg);
+}
+
+/*=============================================
+=            toggle switch-8            =
+=============================================*/
+.switch-8 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="switch-8-checkbox-default"] {
+  appearance: none;
+  box-sizing: content-box;
+  --switch-inline-size: 4.4rem;
+  --switch-block-size: calc(var(--switch-inline-size) / 2);
+  --padding: 0.2rem;
+  block-size: var(--switch-block-size);
+  inline-size: var(--switch-inline-size);
+  border-radius: var(--vce-border-radius-pill);
+  background: var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+  transition: background-color var(--vce-animation-time-sm);
+}
+input[name="switch-8-checkbox-default"]:is(:hover, :focus) {
+  outline: 0;
+}
+input[name="switch-8-checkbox-default"]::before {
+  --thumb-size: var(--switch-block-size);
+  content: "";
+  grid-area: checkbox;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-top);
+  transition: all var(--vce-animation-time-sm);
+}
+input[name="switch-8-checkbox-default"]:is(:hover, :focus)::before {
+  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
+}
+input[name="switch-8-checkbox-default"]::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--padding) * -2);
+  left: calc(var(--padding) * -2);
+  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
+  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
+  border: 2px solid var(--vce-clr-secondary-surface);
+  border-radius: var(--vce-border-radius-pill);
+  opacity: 0;
+}
+input[name="switch-8-checkbox-default"]:focus::after {
+  opacity: 1;
+}
+input[name="switch-8-checkbox-default"]:checked::before {
+  transform: translateX(100%);
+}
+input[name="switch-8-checkbox-default"]:checked {
+  background: var(--vce-clr-secondary-surface);
+}
+/*=============================================
+=            toggle switch-9            =
+=============================================*/
+.switch-9 {
+  display: grid;
+  grid-template-areas: "switch";
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  position: relative;
+  z-index: var(--vce-z-base);
+}
+.switch-9::after {
+  content: "on off";
+  color: var(--vce-clr-primary-top);
+  grid-area: switch;
+  justify-self: center;
+  align-self: center;
+  z-index: var(--vce-z-top);
+}
+
+input[name="switch-9-checkbox-default"] {
+  grid-area: switch;
+  appearance: none;
+  box-sizing: content-box;
+  --switch-inline-size: 4.4rem;
+  --switch-block-size: calc(var(--switch-inline-size) / 2);
+  --padding: 0.2rem;
+  block-size: var(--switch-block-size);
+  inline-size: var(--switch-inline-size);
+  border-radius: var(--vce-border-radius-pill);
+  background: var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+}
+input[name="switch-9-checkbox-default"]:is(:hover, :focus) {
+  outline: 0;
+}
+input[name="switch-9-checkbox-default"]::before {
+  --thumb-size: var(--switch-block-size);
+  content: "";
+  grid-area: checkbox;
+  inline-size: var(--thumb-size);
+  block-size: var(--thumb-size);
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-top);
+  transition: all var(--vce-animation-time-sm);
+}
+input[name="switch-9-checkbox-default"]:is(:hover, :focus)::before {
+  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
+}
+input[name="switch-9-checkbox-default"]::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--padding) * -2);
+  left: calc(var(--padding) * -2);
+  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
+  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
+  border: 2px solid var(--vce-clr-secondary-surface);
+  border-radius: var(--vce-border-radius-pill);
+  opacity: 0;
+}
+input[name="switch-9-checkbox-default"]:focus::after {
+  opacity: 1;
+}
+input[name="switch-9-checkbox-default"]:checked::before {
+  transform: translateX(100%);
+}

@@ -1,0 +1,364 @@
+/*=============================================
+=            custom-checkbox-1            =
+=============================================*/
+.checkbox-1 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="checkbox-1-default-checkbox"] {
+  appearance: none;
+  box-sizing: content-box;
+  --checkbox-inline-size: 1.5rem;
+  --checkbox-block-size: var(--checkbox-inline-size);
+  --padding: 0.2rem;
+  block-size: var(--checkbox-block-size);
+  inline-size: var(--checkbox-inline-size);
+  border-radius: var(--vce-border-radius);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+input[name="checkbox-1-default-checkbox"]:is(:hover, :focus) {
+  outline: 0;
+  box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
+}
+input[name="checkbox-1-default-checkbox"]:active {
+  box-shadow: 0 0 5px 3px var(--vce-clr-secondary-surface);
+}
+input[name="checkbox-1-default-checkbox"]::before {
+  content: "";
+  grid-area: checkbox;
+  block-size: var(--checkbox-block-size);
+  inline-size: var(--checkbox-inline-size);
+  background-image: url("data:image/svg+xml;utf8,<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M8.53333 16L14.9333 21.3333L23.4667 10.6667' stroke='hsl(177, 90%, 59%)' stroke-width='2'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--vce-animation-time-xs);
+}
+
+input[name="checkbox-1-default-checkbox"]:checked::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*=============================================
+=            custom-checkbox-2            =
+=============================================*/
+
+.checkbox-2 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="checkbox-2-default-checkbox"] {
+  appearance: none;
+  box-sizing: content-box;
+  --checkbox-inline-size: 1.5rem;
+  --checkbox-block-size: var(--checkbox-inline-size);
+  --padding: 0.2rem;
+  block-size: var(--checkbox-block-size);
+  inline-size: var(--checkbox-inline-size);
+  border-radius: var(--vce-border-radius-circle);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+input[name="checkbox-2-default-checkbox"]:is(:hover, :focus) {
+  outline: 0;
+  box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
+}
+input[name="checkbox-2-default-checkbox"]:active {
+  box-shadow: 0 0 5px 3px var(--vce-clr-secondary-surface);
+}
+input[name="checkbox-2-default-checkbox"]::before {
+  content: "";
+  grid-area: checkbox;
+  block-size: var(--checkbox-block-size);
+  inline-size: var(--checkbox-inline-size);
+  background-image: url("data:image/svg+xml;utf8,<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M8.53333 16L14.9333 21.3333L23.4667 10.6667' stroke='hsl(177, 90%, 59%)' stroke-width='2'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(0);
+  visibility: hidden;
+  transition: all var(--vce-animation-time-xs);
+}
+
+input[name="checkbox-2-default-checkbox"]:checked::before {
+  visibility: visible;
+  transform: scale(1);
+}
+/*=============================================
+=            custom-checkbox-3            =
+=============================================*/
+
+.checkbox-3 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="checkbox-3-default-checkbox"] {
+  appearance: none;
+  box-sizing: content-box;
+  --checkbox-inline-size: 1.5rem;
+  --checkbox-block-size: var(--checkbox-inline-size);
+  --padding: 0.2rem;
+  block-size: var(--checkbox-block-size);
+  inline-size: var(--checkbox-inline-size);
+  border-radius: var(--vce-border-radius);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+input[name="checkbox-3-default-checkbox"]:is(:hover, :focus) {
+  outline: 0;
+  box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
+}
+input[name="checkbox-3-default-checkbox"]:active {
+  box-shadow: 0 0 5px 3px var(--vce-clr-secondary-surface);
+}
+input[name="checkbox-3-default-checkbox"]::before {
+  content: "";
+  grid-area: checkbox;
+  block-size: var(--checkbox-block-size);
+  inline-size: var(--checkbox-inline-size);
+  background-image: url("data:image/svg+xml;utf8,<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M8.53333 16L14.9333 21.3333L23.4667 10.6667' stroke='hsl(0,100%,100%)' stroke-width='2'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--vce-clr-primary-surface);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--vce-animation-time-xs);
+}
+
+input[name="checkbox-3-default-checkbox"]:checked::before {
+  visibility: visible;
+  opacity: 1;
+}
+/*=============================================
+=            custom-checkbox-4            =
+=============================================*/
+
+.checkbox-4 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="checkbox-4-default-checkbox"] {
+  appearance: none;
+  box-sizing: content-box;
+  --checkbox-inline-size: 1.7rem;
+  --checkbox-block-size: var(--checkbox-inline-size);
+  block-size: var(--checkbox-block-size);
+  inline-size: var(--checkbox-inline-size);
+  border-radius: var(--vce-border-radius);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+input[name="checkbox-4-default-checkbox"]:is(:hover, :focus) {
+  outline: 0;
+  box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
+}
+input[name="checkbox-4-default-checkbox"]:active {
+  box-shadow: 0 0 5px 3px var(--vce-clr-secondary-surface);
+}
+input[name="checkbox-4-default-checkbox"]::before {
+  content: "";
+  grid-area: checkbox;
+  block-size: 100%;
+  inline-size: 100%;
+  background-image: url("data:image/svg+xml;utf8,<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M8.53333 16L14.9333 21.3333L23.4667 10.6667' stroke='hsl(0,100%,100%)' stroke-width='2'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--vce-clr-primary-surface);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--vce-animation-time-xs);
+}
+
+input[name="checkbox-4-default-checkbox"]:checked::before {
+  visibility: visible;
+  opacity: 1;
+}
+/*=============================================
+=            custom-checkbox-5            =
+=============================================*/
+
+.checkbox-5 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="checkbox-5-default-checkbox"] {
+  appearance: none;
+  box-sizing: content-box;
+  --checkbox-inline-size: 1.7rem;
+  --checkbox-block-size: var(--checkbox-inline-size);
+  block-size: var(--checkbox-block-size);
+  inline-size: var(--checkbox-inline-size);
+  border-radius: var(--vce-border-radius);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+input[name="checkbox-5-default-checkbox"]:is(:hover, :focus) {
+  outline: 0;
+  box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
+}
+input[name="checkbox-5-default-checkbox"]::before {
+  content: "";
+  position: relative;
+  grid-area: checkbox;
+  block-size: 100%;
+  inline-size: 100%;
+  border-radius: var(--vce-border-radius-circle);
+  border: 1px solid var(--vce-clr-primary-surface);
+
+  transform: scale(0);
+}
+input[name="checkbox-5-default-checkbox"]:active::before {
+  transform: scale(3);
+}
+input[name="checkbox-5-default-checkbox"]::after {
+  content: "";
+  position: relative;
+  grid-area: checkbox;
+  block-size: 100%;
+  inline-size: 100%;
+  background-image: url("data:image/svg+xml;utf8,<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M8.53333 16L14.9333 21.3333L23.4667 10.6667' stroke='hsl(0,100%,100%)' stroke-width='2'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--vce-clr-primary-surface);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--vce-animation-time-xs);
+}
+
+input[name="checkbox-5-default-checkbox"]:checked::after {
+  visibility: visible;
+  opacity: 1;
+}
+/*=============================================
+=            custom-checkbox-5            =
+=============================================*/
+
+.checkbox-6 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="checkbox-6-default-checkbox"] {
+  appearance: none;
+  box-sizing: content-box;
+  --checkbox-inline-size: 1.7rem;
+  --checkbox-block-size: var(--checkbox-inline-size);
+  block-size: var(--checkbox-block-size);
+  inline-size: var(--checkbox-inline-size);
+  border-radius: var(--vce-border-radius);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  grid-template-areas: "checkbox";
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+input[name="checkbox-6-default-checkbox"]:is(:hover, :focus) {
+  outline: 0;
+  box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
+}
+
+input[name="checkbox-6-default-checkbox"]::before {
+  content: "";
+  position: relative;
+  grid-area: checkbox;
+  block-size: 100%;
+  inline-size: 100%;
+  background-image: url("data:image/svg+xml;utf8,<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M8.53333 16L14.9333 21.3333L23.4667 10.6667' stroke='hsl(248, 49%, 46%)' stroke-width='2'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200% 200%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--vce-animation-time-xs);
+}
+
+input[name="checkbox-6-default-checkbox"]:checked::before {
+  visibility: visible;
+  opacity: 1;
+  background-size: 100% 100%;
+}
