@@ -291,7 +291,9 @@ function closeAndDeleteModal(modalContainer) {
     container.appendChild(buttons);
     if (
       container.classList.contains("effect--hover") ||
-      container.classList.contains("effect--focus")
+      container.classList.contains("effect--focus") ||
+      container.classList.contains("effect--active") ||
+      container.classList.contains("effect--disabled")
     ) {
       const EffectIndicator = document.createElement("div");
       EffectIndicator.classList.add("effect-indicator");
@@ -300,6 +302,12 @@ function closeAndDeleteModal(modalContainer) {
       }
       if (container.classList.contains("effect--focus")) {
         EffectIndicator.innerHTML += createFocusIndicator();
+      }
+      if (container.classList.contains("effect--active")) {
+        EffectIndicator.innerHTML += createActiveIndicator();
+      }
+      if (container.classList.contains("effect--disabled")) {
+        EffectIndicator.innerHTML += createDisabledIndicator();
       }
       container.appendChild(EffectIndicator);
     }
@@ -323,6 +331,27 @@ function createFocusIndicator() {
  
  </span>
  <span>focus</span></div>`;
+}
+function createActiveIndicator() {
+  return `<div class="effect-indicator--focus indicator__container">
+ <span><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <path d="M1.06641 16C1.06641 24.2475 7.75229 30.9333 15.9998 30.9333C24.2472 30.9333 30.9331 24.2475 30.9331 16C30.9331 7.75253 24.2472 1.06665 15.9998 1.06665C7.75229 1.06665 1.06641 7.75253 1.06641 16Z" stroke="black"/>
+ </svg>
+ 
+ 
+ </span>
+ <span>active</span></div>`;
+}
+
+function createDisabledIndicator() {
+  return `<div class="effect-indicator--focus indicator__container">
+ <span><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <path d="M5.35331 5.64642L26.4746 26.7677M1.06641 16C1.06641 24.2475 7.75229 30.9333 15.9998 30.9333C24.2472 30.9333 30.9331 24.2475 30.9331 16C30.9331 7.75253 24.2472 1.06665 15.9998 1.06665C7.75229 1.06665 1.06641 7.75253 1.06641 16Z" stroke="black"/>
+ </svg>
+ 
+ 
+ </span>
+ <span>disabled</span></div>`;
 }
 
 // *----------  setting color scheme  ----------

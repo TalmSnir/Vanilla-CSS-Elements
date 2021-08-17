@@ -348,7 +348,7 @@ input[name="checkbox-6-default-checkbox"]::before {
   grid-area: checkbox;
   block-size: 100%;
   inline-size: 100%;
-  background-image: url("data:image/svg+xml;utf8,<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M8.53333 16L14.9333 21.3333L23.4667 10.6667' stroke='hsl(248, 49%, 46%)' stroke-width='2'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M8.53333 16L14.9333 21.3333L23.4667 10.6667' stroke='hsl(177, 90%, 59%)' stroke-width='2'/></svg>");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 200% 200%;

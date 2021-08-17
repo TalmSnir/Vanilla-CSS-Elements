@@ -1,0 +1,404 @@
+/*=============================================
+=            custom-radio-1            =
+=============================================*/
+.radio-1 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="radio-1-default-radio"] {
+  appearance: none;
+  box-sizing: content-box;
+  --radio-inline-size: 1.3rem;
+  --radio-block-size: var(--radio-inline-size);
+  --padding: 0.4rem;
+  block-size: var(--radio-block-size);
+  inline-size: var(--radio-inline-size);
+  border-radius: var(--vce-border-radius-circle);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "radio";
+  cursor: pointer;
+  position: relative;
+}
+input[name="radio-1-default-radio"]:is(:hover, :focus) {
+  outline: 0;
+  box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
+}
+
+input[name="radio-1-default-radio"]::before {
+  content: "";
+  grid-area: radio;
+  block-size: 100%;
+  inline-size: 100%;
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-surface);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--vce-animation-time-xs);
+}
+
+input[name="radio-1-default-radio"]:checked::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*=============================================
+  =            custom-radio-2            =
+  =============================================*/
+
+.radio-2 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="radio-2-default-radio"] {
+  appearance: none;
+  box-sizing: content-box;
+  --radio-inline-size: 1.3rem;
+  --radio-block-size: var(--radio-inline-size);
+  --padding: 0.4rem;
+  block-size: var(--radio-block-size);
+  inline-size: var(--radio-inline-size);
+  border-radius: var(--vce-border-radius-circle);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "radio";
+  cursor: pointer;
+  position: relative;
+}
+input[name="radio-2-default-radio"]:is(:hover, :focus) {
+  outline: 0;
+  box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
+}
+
+input[name="radio-2-default-radio"]::before {
+  content: "";
+  grid-area: radio;
+  block-size: 100%;
+  inline-size: 100%;
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-surface);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all var(--vce-animation-time-xs);
+}
+
+input[name="radio-2-default-radio"]:checked::before {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+/*=============================================
+  =            custom-radio-3            =
+  =============================================*/
+
+.radio-3 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="radio-3-default-radio"] {
+  appearance: none;
+  box-sizing: content-box;
+  --radio-inline-size: 1.3rem;
+  --radio-block-size: var(--radio-inline-size);
+  --padding: 0.4rem;
+  block-size: var(--radio-block-size);
+  inline-size: var(--radio-inline-size);
+  border-radius: var(--vce-border-radius-circle);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "radio";
+  cursor: pointer;
+  position: relative;
+}
+input[name="radio-3-default-radio"]:is(:hover, :focus) {
+  outline: 0;
+  box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
+}
+
+input[name="radio-3-default-radio"]::before {
+  content: "";
+  grid-area: radio;
+  block-size: 100%;
+  inline-size: 100%;
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-surface);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(4);
+  transition: all var(--vce-animation-time-xs);
+}
+
+input[name="radio-3-default-radio"]:checked::before {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+/*=============================================
+  =            custom-radio-4            =
+  =============================================*/
+
+.radio-4 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="radio-4-default-radio"] {
+  appearance: none;
+  box-sizing: content-box;
+  --radio-inline-size: 1.3rem;
+  --radio-block-size: var(--radio-inline-size);
+  --padding: 0.4rem;
+  block-size: var(--radio-block-size);
+  inline-size: var(--radio-inline-size);
+  border-radius: var(--vce-border-radius-circle);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "radio";
+  cursor: pointer;
+  position: relative;
+  transition: all var(--vce-animation-time-xs);
+}
+input[name="radio-4-default-radio"]:is(:hover, :focus) {
+  outline: 0;
+  box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
+}
+
+input[name="radio-4-default-radio"]::before {
+  content: "";
+  grid-area: radio;
+  block-size: 100%;
+  inline-size: 100%;
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-container-background);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--vce-animation-time-xs);
+}
+
+input[name="radio-4-default-radio"]:checked::before {
+  visibility: visible;
+  opacity: 1;
+}
+input[name="radio-4-default-radio"]:checked {
+  background: var(--vce-clr-primary-surface);
+}
+/*=============================================
+  =            custom-radio-5            =
+  =============================================*/
+
+.radio-5 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="radio-5-default-radio"] {
+  appearance: none;
+  box-sizing: content-box;
+  --radio-inline-size: 1.3rem;
+  --radio-block-size: var(--radio-inline-size);
+  --padding: 0.4rem;
+  block-size: var(--radio-block-size);
+  inline-size: var(--radio-inline-size);
+  border-radius: var(--vce-border-radius-circle);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "radio";
+  cursor: pointer;
+  position: relative;
+}
+input[name="radio-5-default-radio"]:is(:hover, :focus) {
+  outline: 0;
+  box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
+}
+
+input[name="radio-5-default-radio"]::before {
+  content: "";
+  grid-area: radio;
+  block-size: 100%;
+  inline-size: 100%;
+  border-radius: var(--vce-border-radius-circle);
+  opacity: 0;
+  visibility: hidden;
+  transition: box-shadow var(--vce-animation-time-xs),
+    background var(--vce-animation-time-xs) var(--vce-animation-time-xs);
+}
+
+input[name="radio-5-default-radio"]:checked::before {
+  visibility: visible;
+  opacity: 1;
+  box-shadow: inset 0 0 0 2px var(--vce-clr-primary-surface);
+  background: var(--vce-clr-primary-surface);
+}
+
+/*=============================================
+  =            custom-radio-6            =
+  =============================================*/
+
+.radio-6 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="radio-6-default-radio"] {
+  appearance: none;
+  box-sizing: content-box;
+  --radio-inline-size: 1.3rem;
+  --radio-block-size: var(--radio-inline-size);
+  --padding: 0.4rem;
+  block-size: var(--radio-block-size);
+  inline-size: var(--radio-inline-size);
+  border-radius: var(--vce-border-radius-circle);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "radio";
+  cursor: pointer;
+  position: relative;
+}
+input[name="radio-6-default-radio"]:is(:hover, :focus) {
+  outline: 0;
+  box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
+}
+
+input[name="radio-6-default-radio"]::before {
+  content: "";
+  grid-area: radio;
+  block-size: 100%;
+  inline-size: 100%;
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-surface);
+  transform: translate(0, -50px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform var(--vce-animation-time-xs);
+}
+
+input[name="radio-6-default-radio"]:checked::before {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/*=============================================
+  =            custom-radio-7            =
+  =============================================*/
+.radio-7 {
+  display: flex;
+  align-items: center;
+  gap: var(--vce-gap-md);
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--vce-fs-label);
+  text-transform: capitalize;
+  color: var(--vce-clr-text);
+}
+
+input[name="radio-7-default-radio"] {
+  appearance: none;
+  box-sizing: content-box;
+  --radio-inline-size: 1.3rem;
+  --radio-block-size: var(--radio-inline-size);
+  --padding: 0.4rem;
+  block-size: var(--radio-block-size);
+  inline-size: var(--radio-inline-size);
+  border-radius: var(--vce-border-radius-circle);
+  border: 3px solid var(--vce-clr-primary-surface);
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  padding: var(--padding);
+  grid-template-areas: "radio";
+  cursor: pointer;
+  position: relative;
+  transition: transform var(--vce-animation-time-xs);
+}
+input[name="radio-7-default-radio"]:is(:hover, :focus) {
+  outline: 0;
+  box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
+}
+input[name="radio-7-default-radio"]:active {
+  box-shadow: 0 0 5px 3px var(--vce-clr-secondary-surface);
+}
+input[name="radio-7-default-radio"]::before {
+  content: "";
+  grid-area: radio;
+  block-size: 100%;
+  inline-size: 100%;
+  border-radius: var(--vce-border-radius-circle);
+  background: var(--vce-clr-primary-surface);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform var(--vce-animation-time-xs);
+}
+
+input[name="radio-7-default-radio"]:checked::before {
+  visibility: visible;
+  opacity: 1;
+}
+input[name="radio-7-default-radio"]:checked {
+  transform: rotateY(180deg);
+}
