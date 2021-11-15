@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -89,8 +89,8 @@ html {
   --vce-fw-sm: 400;
   --vce-fw-xs: 300;
   /*----------  VanillaCssElements-font families  ----------*/
-  --vce-ff-primary: "Roboto", sans-serif;
-  --vce-ff-secondary: "Poppins", sans-serif;
+  --vce-ff-primary: 'Roboto', sans-serif;
+  --vce-ff-secondary: 'Poppins', sans-serif;
   /*----------  VanillaCssElements-z-indexes  ----------*/
   --vce-z-base: 0;
   --vce-z-behind: -1;
@@ -195,6 +195,7 @@ header {
   grid-auto-flow: column;
   gap: var(--vce-gap-md);
   list-style: none;
+  border-radius: var(--vce-border-radius);
 }
 .header__menu__link {
   text-decoration: 0;
@@ -276,7 +277,7 @@ header {
 .color-scheme {
   display: grid;
   place-items: Center;
-  grid-template-areas: "color-icon";
+  grid-template-areas: 'color-icon';
   align-self: flex-start;
   background: transparent;
   border: 0;
@@ -284,7 +285,7 @@ header {
   position: relative;
 }
 .color-scheme::before {
-  content: "dark / light";
+  content: 'dark / light';
   position: absolute;
   top: calc(100% + var(--vce-fs-link));
   width: max-content;
@@ -298,7 +299,7 @@ header {
   border-radius: var(--vce-border-radius);
 }
 .color-scheme::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + var(--vce-fs-link));
   height: calc(var(--vce-fs-link));
@@ -387,7 +388,7 @@ header {
 }
 .landing__cta::before {
   --ball-diameter: 1.5rem;
-  content: "";
+  content: '';
   position: absolute;
   top: calc((var(--container-inline-size) - var(--ball-diameter)) / 2);
   left: calc((var(--container-inline-size) - var(--ball-diameter)) / 2);
@@ -421,7 +422,7 @@ h1.section__title {
 
 h1.section__title::before,
 h1.section__title::after {
-  content: "";
+  content: '';
   position: relative;
   height: 0.1em;
   width: 100%;
@@ -593,7 +594,7 @@ footer {
 }
 
 .footer__menu__link::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;

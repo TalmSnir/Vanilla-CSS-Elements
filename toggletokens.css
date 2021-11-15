@@ -9,7 +9,7 @@
   user-select: none;
   font-size: var(--vce-fs-label);
   text-transform: capitalize;
-  color: var(--vce-clr-primary-top);
+  color: var(--vce-clr-text);
   inline-size: var(--token-inline-size);
   block-size: var(--token-block-size);
   display: grid;
@@ -57,7 +57,7 @@ input[name="toggle-token-1-default-checkbox"]:checked {
   user-select: none;
   font-size: var(--vce-fs-label);
   text-transform: capitalize;
-  color: var(--vce-clr-primary-top);
+  color: var(--vce-clr-text);
   inline-size: var(--token-inline-size);
   block-size: var(--token-block-size);
   display: grid;
@@ -105,7 +105,7 @@ input[name="toggle-token-2-default-checkbox"]:checked {
   user-select: none;
   font-size: var(--vce-fs-label);
   text-transform: capitalize;
-  color: var(--vce-clr-primary-top);
+  color: var(--vce-clr-text);
   inline-size: var(--token-inline-size);
   block-size: var(--token-block-size);
   display: grid;
@@ -218,7 +218,7 @@ input[name="toggle-token-4-default-checkbox"]:checked::before {
   user-select: none;
   font-size: var(--vce-fs-label);
   text-transform: capitalize;
-  color: var(--vce-clr-primary-top);
+  color: var(--vce-clr-text);
   inline-size: var(--token-inline-size);
   block-size: var(--token-block-size);
   display: grid;

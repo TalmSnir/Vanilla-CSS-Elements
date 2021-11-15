@@ -3,58 +3,58 @@
 // !=============================================
 const ELEMENTS_TYPES = [
   ...document.querySelectorAll('link[rel="stylesheet"]'),
-].map((sheet) => {
+].map(sheet => {
   let elementType = sheet.href;
-  elementType = elementType.replace(/(https?:\/\/.*\/)/, "");
-  elementType = elementType.replace(/\.css/, "");
+  elementType = elementType.replace(/(https?:\/\/.*\/)/, '');
+  elementType = elementType.replace(/\.css/, '');
   return elementType;
 });
 
 let CSS_CUSTOM_PROPERTIES = getCustomProperties();
 
 const LIGHT_THEME_COLORS = [
-  ["--vce-clr-primary-surface", "hsl(248, 49%, 46%)"],
-  ["--vce-clr-primary-top", "hsl(0, 100%, 100%)"],
-  ["--vce-clr-secondary-surface", "hsl(206, 54%, 55%)"],
-  ["--vce-clr-secondary-top", "hsl(0, 100%, 100%)"],
-  ["--vce-clr-tertiary-surface", "hsl(177, 90%, 59%)"],
-  ["--vce-clr-tertiary-top", " hsl(0, 100%, 100%)"],
-  ["--vce-clr-accent-surface", "hsl(287, 12%, 40%)"],
-  ["--vce-clr-dark", "hsl(0, 0%, 0%)"],
-  ["--vce-clr-modal-background", " hsl(0, 0%, 0%, 0.7)"],
-  ["--vce-clr-container-background", "hsl(0, 100%, 100%)"],
-  ["--vce-clr-shadow-1", "hsl(0, 0%, 0%, 0.18)"],
-  ["--vce-clr-shadow-2", "hsl(0, 0%, 0%, 0.12)"],
-  ["--vce-clr-shadow-3", "hsl(0, 0%, 0%, 0.04)"],
-  ["--vce-clr-container-background-top", "hsl(240, 23%, 97%)"],
-  ["--vce-clr-text", "hsl(0, 0%, 0%)"],
+  ['--vce-clr-primary-surface', 'hsl(248, 49%, 46%)'],
+  ['--vce-clr-primary-top', 'hsl(0, 100%, 100%)'],
+  ['--vce-clr-secondary-surface', 'hsl(206, 54%, 55%)'],
+  ['--vce-clr-secondary-top', 'hsl(0, 100%, 100%)'],
+  ['--vce-clr-tertiary-surface', 'hsl(177, 90%, 59%)'],
+  ['--vce-clr-tertiary-top', ' hsl(0, 100%, 100%)'],
+  ['--vce-clr-accent-surface', 'hsl(287, 12%, 40%)'],
+  ['--vce-clr-dark', 'hsl(0, 0%, 0%)'],
+  ['--vce-clr-modal-background', ' hsl(0, 0%, 0%, 0.7)'],
+  ['--vce-clr-container-background', 'hsl(0, 100%, 100%)'],
+  ['--vce-clr-shadow-1', 'hsl(0, 0%, 0%, 0.18)'],
+  ['--vce-clr-shadow-2', 'hsl(0, 0%, 0%, 0.12)'],
+  ['--vce-clr-shadow-3', 'hsl(0, 0%, 0%, 0.04)'],
+  ['--vce-clr-container-background-top', 'hsl(240, 23%, 97%)'],
+  ['--vce-clr-text', 'hsl(0, 0%, 0%)'],
 ];
 
 const DARK_THEME_COLORS = [
-  ["--vce-clr-primary-surface", "hsl(247, 49%, 71%)"],
-  ["--vce-clr-primary-top", "hsl(0, 0%, 0%)"],
-  ["--vce-clr-secondary-surface", "hsl(206, 55%, 78%)"],
-  ["--vce-clr-secondary-top", " hsl(0, 0%, 0%)"],
-  ["--vce-clr-tertiary-surface", "hsl(177, 89%, 83%)"],
-  ["--vce-clr-tertiary-top", "hsl(0, 0%, 0%)"],
-  ["--vce-clr-accent-surface", "hsl(286, 12%, 64%)"],
-  ["--vce-clr-dark", " hsl(0, 0%, 0%)"],
-  ["--vce-clr-modal-background", " hsl(0, 0%, 0%, 0.7)"],
-  ["--vce-clr-container-background", " hsl(0, 0%, 0%)"],
-  ["--vce-clr-shadow-1", "hsl(0, 100%, 100%, 0.18)"],
-  ["--vce-clr-shadow-2", "hsl(0, 100%, 100%, 0.12)"],
-  ["--vce-clr-shadow-3", "hsl(0, 100%, 100%, 0.04)"],
-  ["--vce-clr-container-background-top", "hsl(240, 23%, 10%)"],
-  ["--vce-clr-text", "hsl(0, 100%, 100%)"],
+  ['--vce-clr-primary-surface', 'hsl(247, 49%, 71%)'],
+  ['--vce-clr-primary-top', 'hsl(0, 0%, 0%)'],
+  ['--vce-clr-secondary-surface', 'hsl(206, 55%, 78%)'],
+  ['--vce-clr-secondary-top', ' hsl(0, 0%, 0%)'],
+  ['--vce-clr-tertiary-surface', 'hsl(177, 89%, 83%)'],
+  ['--vce-clr-tertiary-top', 'hsl(0, 0%, 0%)'],
+  ['--vce-clr-accent-surface', 'hsl(286, 12%, 64%)'],
+  ['--vce-clr-dark', ' hsl(0, 0%, 0%)'],
+  ['--vce-clr-modal-background', ' hsl(240, 23%, 97%,0.3)'],
+  ['--vce-clr-container-background', ' hsl(0, 0%, 0%)'],
+  ['--vce-clr-shadow-1', 'hsl(0, 100%, 100%, 0.18)'],
+  ['--vce-clr-shadow-2', 'hsl(0, 100%, 100%, 0.12)'],
+  ['--vce-clr-shadow-3', 'hsl(0, 100%, 100%, 0.04)'],
+  ['--vce-clr-container-background-top', 'hsl(240, 23%, 10%)'],
+  ['--vce-clr-text', 'hsl(0, 100%, 100%)'],
 ];
 
 // !=============================================
 // =       assigning global variables        =
 // !=============================================
-const elementsContainers = document.querySelectorAll(".element__container");
-const body = document.querySelector("body");
-let preferredColorScheme = "light-theme";
-const themeBtn = document.querySelector(".color-scheme");
+const elementsContainers = document.querySelectorAll('.element__container');
+const body = document.querySelector('body');
+let preferredColorScheme = 'light-theme';
+const themeBtn = document.querySelector('.color-scheme');
 
 // !=============================================
 // =            functions            =
@@ -65,11 +65,9 @@ const themeBtn = document.querySelector(".color-scheme");
 //gets all the custom properties(css variables) from the mainstyle style sheet.
 function getCustomProperties() {
   const cssMainRules = [...document.styleSheets[0].cssRules];
-  const cssRootRules = cssMainRules.find(
-    (rule) => rule.selectorText === ":root"
-  );
+  const cssRootRules = cssMainRules.find(rule => rule.selectorText === ':root');
   const cssRootStyle = [...cssRootRules.style];
-  const cssCustomProperties = cssRootStyle.map((rootStyle) => [
+  const cssCustomProperties = cssRootStyle.map(rootStyle => [
     rootStyle,
     cssRootRules.style.getPropertyValue(rootStyle),
   ]);
@@ -82,7 +80,7 @@ function getCustomProperties() {
 function getElementCss(element, container) {
   const elementClasses = [...element.classList];
   const elementType = container.dataset.type;
-  cssStyleSheetId = ELEMENTS_TYPES.findIndex((type) => type === elementType);
+  cssStyleSheetId = ELEMENTS_TYPES.findIndex(type => type === elementType);
 
   const cssRulesList = document.styleSheets[cssStyleSheetId].cssRules;
   let elementStyle = elementClasses.reduce((elementStyle, elementClass) => {
@@ -90,11 +88,11 @@ function getElementCss(element, container) {
       const ruleText = rule.cssText;
 
       if (ruleText.includes(elementClass)) {
-        elementStyle = elementStyle + " " + rule.cssText;
+        elementStyle = elementStyle + ' ' + rule.cssText;
       }
     }
     return elementStyle;
-  }, "");
+  }, '');
   elementStyle = replaceCustomPropertiesWithValue(
     elementStyle,
     CSS_CUSTOM_PROPERTIES
@@ -110,9 +108,9 @@ function getElementHtml(element) {
 
 //replaces the html greater than and smaller than signs with there entities and strips the unnecessary classes for the end user
 function setHtmlAsText(elementOuterHtml) {
-  let elementHtmlText = elementOuterHtml.replace(/>/gi, "&gt");
-  elementHtmlText = elementHtmlText.replace(/</gi, "&lt");
-  elementHtmlText = elementHtmlText.replace(" element", "");
+  let elementHtmlText = elementOuterHtml.replace(/>/gi, '&gt');
+  elementHtmlText = elementHtmlText.replace(/</gi, '&lt');
+  elementHtmlText = elementHtmlText.replace(' element', '');
 
   return elementHtmlText;
 }
@@ -137,14 +135,14 @@ function replaceCustomPropertiesWithValue(elementCss, cssCustomProperties) {
 function getElementNode(e) {
   const elementClassList = e.target.classList;
   if (
-    elementClassList.contains("copy-to-clipboard") ||
-    elementClassList.contains("watch-code")
+    elementClassList.contains('copy-to-clipboard') ||
+    elementClassList.contains('watch-code')
   ) {
     const container = e.currentTarget;
-    const element = container.querySelector(".element");
+    const element = container.querySelector('.element');
     const elementCss = getElementCss(element, container);
     const elementHtml = getElementHtml(element);
-    elementClassList.contains("copy-to-clipboard")
+    elementClassList.contains('copy-to-clipboard')
       ? copyElement(elementCss, elementHtml)
       : createElementModal(elementCss, elementHtml);
   }
@@ -153,12 +151,12 @@ function getElementNode(e) {
 //sets the element's css and html to the user's clipboard
 function copyElement(elementCss, elementHtml) {
   let copyStatus = navigator.clipboard.writeText(elementHtml + elementCss);
-  copyStatus = copyStatus ? "successfully" : "unsuccessfully";
-  const statusModal = document.createElement("div");
-  statusModal.classList.add("status-modal");
-  copyStatus === "unsuccessfully"
-    ? (statusModal.style.backgroundColor = "red")
-    : "";
+  copyStatus = copyStatus ? 'successfully' : 'unsuccessfully';
+  const statusModal = document.createElement('div');
+  statusModal.classList.add('status-modal');
+  copyStatus === 'unsuccessfully'
+    ? (statusModal.style.backgroundColor = 'red')
+    : '';
   statusModal.innerHTML = `
   <p>the element's html and css were copied ${copyStatus}</p>
   `;
@@ -171,9 +169,9 @@ function copyElement(elementCss, elementHtml) {
 
 //creates the watch-code modal with the element's css and html.
 function createElementModal(elementCss, elementHtml) {
-  const modalContainer = document.createElement("div");
+  const modalContainer = document.createElement('div');
   const elementHtmlText = setHtmlAsText(elementHtml);
-  modalContainer.classList.add("modal__container");
+  modalContainer.classList.add('modal__container');
   modalContainer.innerHTML = `
   <div class="modal__content">
   <div class="modal__buttons-group buttons-group">
@@ -204,7 +202,7 @@ ${elementHtmlText}
 <h2>css</h2>
 <pre>
 <code class="language-css">
-${elementCss.replace(/;/gi, ";\n").replace(/{/gi, "{\n").replace(/}/gi, "}\n")} 
+${elementCss.replace(/;/gi, ';\n').replace(/{/gi, '{\n').replace(/}/gi, '}\n')} 
 </code>
 </pre>
 </div>
@@ -217,10 +215,10 @@ ${elementCss.replace(/;/gi, ";\n").replace(/{/gi, "{\n").replace(/}/gi, "}\n")}
   body.appendChild(modalContainer);
 
   modalContainer
-    .querySelectorAll("code")
-    .forEach((codeBlock) => Prism.highlightElement(codeBlock));
+    .querySelectorAll('code')
+    .forEach(codeBlock => Prism.highlightElement(codeBlock));
 
-  const modalContent = modalContainer.querySelector(".modal__content");
+  const modalContent = modalContainer.querySelector('.modal__content');
   setModalPosition(modalContent);
   setListenersToModal(modalContent, modalContainer, elementCss, elementHtml);
 }
@@ -228,7 +226,7 @@ ${elementCss.replace(/;/gi, ";\n").replace(/{/gi, "{\n").replace(/}/gi, "}\n")}
 //sets the position of the watch-code modal to the center of the viewport or to the left bottom corner depending on the modal type
 function setModalPosition(modalContent) {
   const scrolledBy = window.pageYOffset;
-  let [x, y] = modalContent.classList.contains("status-modal")
+  let [x, y] = modalContent.classList.contains('status-modal')
     ? [0, window.innerHeight + scrolledBy]
     : [body.clientWidth / 2, scrolledBy];
   const bodyHeight = body.clientHeight;
@@ -253,12 +251,12 @@ function setListenersToModal(
   elementCss,
   elementHtml
 ) {
-  const closeButton = modalContent.querySelector(".close-modal"),
-    copyButton = modalContent.querySelector(".copy-to-clipboard");
-  closeButton.addEventListener("click", () =>
+  const closeButton = modalContent.querySelector('.close-modal'),
+    copyButton = modalContent.querySelector('.copy-to-clipboard');
+  closeButton.addEventListener('click', () =>
     closeAndDeleteModal(modalContainer)
   );
-  copyButton.addEventListener("click", () =>
+  copyButton.addEventListener('click', () =>
     copyElement(elementCss, elementHtml)
   );
 }
@@ -271,9 +269,9 @@ function closeAndDeleteModal(modalContainer) {
 
 //inserts the buttons group to each and every element's container .
 (function () {
-  elementsContainers.forEach((container) => {
-    const buttons = document.createElement("div");
-    buttons.classList.add("buttons-group");
+  elementsContainers.forEach(container => {
+    const buttons = document.createElement('div');
+    buttons.classList.add('buttons-group');
     buttons.innerHTML = `<button class="copy-to-clipboard" >
     <svg class='icon--copy' width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M23.4666 3.2H28.7999V28.8C28.7999 29.9782 27.8448 30.9333 26.6666 30.9333H5.33328C4.15508 30.9333 3.19995 29.9782 3.19995 28.8V3.2H8.53328M9.59995 1.06667H22.4V5.33333C22.4 6.51154 21.4448 7.46667 20.2666 7.46667H11.7333C10.5551 7.46667 9.59995 6.51154 9.59995 5.33333V1.06667Z" stroke="black"/>
@@ -290,23 +288,23 @@ function closeAndDeleteModal(modalContainer) {
       `;
     container.appendChild(buttons);
     if (
-      container.classList.contains("effect--hover") ||
-      container.classList.contains("effect--focus") ||
-      container.classList.contains("effect--active") ||
-      container.classList.contains("effect--disabled")
+      container.classList.contains('effect--hover') ||
+      container.classList.contains('effect--focus') ||
+      container.classList.contains('effect--active') ||
+      container.classList.contains('effect--disabled')
     ) {
-      const EffectIndicator = document.createElement("div");
-      EffectIndicator.classList.add("effect-indicator");
-      if (container.classList.contains("effect--hover")) {
+      const EffectIndicator = document.createElement('div');
+      EffectIndicator.classList.add('effect-indicator');
+      if (container.classList.contains('effect--hover')) {
         EffectIndicator.innerHTML += createHoverIndicator();
       }
-      if (container.classList.contains("effect--focus")) {
+      if (container.classList.contains('effect--focus')) {
         EffectIndicator.innerHTML += createFocusIndicator();
       }
-      if (container.classList.contains("effect--active")) {
+      if (container.classList.contains('effect--active')) {
         EffectIndicator.innerHTML += createActiveIndicator();
       }
-      if (container.classList.contains("effect--disabled")) {
+      if (container.classList.contains('effect--disabled')) {
         EffectIndicator.innerHTML += createDisabledIndicator();
       }
       container.appendChild(EffectIndicator);
@@ -358,14 +356,14 @@ function createDisabledIndicator() {
 //changes the color scheme according to the user's preferences and the theme button on the site.
 function changeColorTheme(colorMode) {
   const docElement = document.documentElement;
-  const heroImage = document.querySelector(".hero-image");
-  if (colorMode === "dark-theme") {
-    heroImage.src = "./assets/image-landing-dark-mode.svg";
+  const heroImage = document.querySelector('.hero-image');
+  if (colorMode === 'dark-theme') {
+    heroImage.src = './assets/image-landing-dark-mode.svg';
     LIGHT_THEME_COLORS.forEach((color, id) => {
       docElement.style.setProperty(color[0], DARK_THEME_COLORS[id][1]);
     });
   } else {
-    heroImage.src = "./assets/image-landing-light-mode.svg";
+    heroImage.src = './assets/image-landing-light-mode.svg';
     DARK_THEME_COLORS.forEach((color, id) => {
       docElement.style.setProperty(color[0], LIGHT_THEME_COLORS[id][1]);
     });
@@ -375,10 +373,10 @@ function changeColorTheme(colorMode) {
 (function isDarkModeEnabled() {
   if (
     window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
+    window.matchMedia('(prefers-color-scheme: dark)').matches
   ) {
-    preferredColorScheme = "dark-theme";
-    themeBtn.classList.add("dark-theme");
+    preferredColorScheme = 'dark-theme';
+    themeBtn.classList.add('dark-theme');
     changeColorTheme(preferredColorScheme);
     updateCustomPropertiesColors();
   }
@@ -386,7 +384,7 @@ function changeColorTheme(colorMode) {
 
 //updates the css properties when color scheme is being set
 function updateCustomPropertiesColors() {
-  const colorsToInsert = themeBtn.classList.contains("dark-theme")
+  const colorsToInsert = themeBtn.classList.contains('dark-theme')
     ? DARK_THEME_COLORS
     : LIGHT_THEME_COLORS;
 
@@ -399,55 +397,55 @@ function updateCustomPropertiesColors() {
 // !=============================================
 
 //Event Listeners
-elementsContainers.forEach((container) =>
-  container.addEventListener("click", getElementNode)
+elementsContainers.forEach(container =>
+  container.addEventListener('click', getElementNode)
 );
-themeBtn.addEventListener("click", () => {
+themeBtn.addEventListener('click', () => {
   themeBtn.blur();
-  if (themeBtn.classList.contains("dark-theme")) {
-    changeColorTheme("light-theme");
-    themeBtn.classList.remove("dark-theme");
+  if (themeBtn.classList.contains('dark-theme')) {
+    changeColorTheme('light-theme');
+    themeBtn.classList.remove('dark-theme');
   } else {
-    changeColorTheme("dark-theme");
-    themeBtn.classList.add("dark-theme");
+    changeColorTheme('dark-theme');
+    themeBtn.classList.add('dark-theme');
   }
   updateCustomPropertiesColors();
 });
 window
-  .matchMedia("(prefers-color-scheme: dark)")
-  .addEventListener("change", (e) => {
-    const heroImage = document.querySelector(".hero-image");
+  .matchMedia('(prefers-color-scheme: dark)')
+  .addEventListener('change', e => {
+    const heroImage = document.querySelector('.hero-image');
 
     if (e.matches) {
-      preferredColorScheme = "dark-theme";
-      themeBtn.classList.add("dark-theme");
+      preferredColorScheme = 'dark-theme';
+      themeBtn.classList.add('dark-theme');
     } else {
-      preferredColorScheme = "light-theme";
-      themeBtn.classList.remove("dark-theme");
+      preferredColorScheme = 'light-theme';
+      themeBtn.classList.remove('dark-theme');
     }
 
     changeColorTheme(preferredColorScheme);
     updateCustomPropertiesColors();
   });
 window
-  .matchMedia("(min-width:1240px)")
-  .addEventListener("change", (e) =>
-    e.matches ? menuIcon.classList.remove("active") : ""
+  .matchMedia('(min-width:1240px)')
+  .addEventListener('change', e =>
+    e.matches ? menuIcon.classList.remove('active') : ''
   );
 
 function toggleMenu() {
-  this.classList.toggle("active");
-  if (this.classList.contains("active")) {
+  this.classList.toggle('active');
+  if (this.classList.contains('active')) {
     const menu = this.nextElementSibling;
-    menu.addEventListener("click", (e) =>
-      e.target !== menu && !e.target.classList.contains("color-scheme")
-        ? this.classList.remove("active")
-        : ""
+    menu.addEventListener('click', e =>
+      e.target !== menu && !e.target.classList.contains('color-scheme')
+        ? this.classList.remove('active')
+        : ''
     );
   }
 }
-const menuIcon = document.querySelector(".header__nav__menu-icon");
-menuIcon.addEventListener("click", toggleMenu);
+const menuIcon = document.querySelector('.header__nav__menu-icon');
+menuIcon.addEventListener('click', toggleMenu);
 //  constants:
 //  ELEMENTS_TYPES,CSS_CUSTOM_PROPERTIES,DARK_THEME_COLORS,LIGHT_THEME_COLORS
 
