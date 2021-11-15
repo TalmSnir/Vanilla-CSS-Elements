@@ -18,12 +18,13 @@
   cursor: pointer;
 }
 
-input[name="toggle-token-1-default-checkbox"] {
+input[name='toggle-token-1-default-checkbox'] {
   position: absolute;
   top: 0;
   left: 0;
   z-index: var(--vce-z-behind);
   appearance: none;
+  -webkit-appearance: none;
   box-sizing: content-box;
   block-size: 100%;
   inline-size: 100%;
@@ -36,12 +37,12 @@ input[name="toggle-token-1-default-checkbox"] {
   opacity: 0.7;
   transition: all var(--vce-animation-time-xs);
 }
-input[name="toggle-token-1-default-checkbox"]:is(:hover, :focus) {
+input[name='toggle-token-1-default-checkbox']:is(:hover, :focus) {
   outline: 0;
   box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
 }
 
-input[name="toggle-token-1-default-checkbox"]:checked {
+input[name='toggle-token-1-default-checkbox']:checked {
   background-image: url("data:image/svg+xml;utf8,<svg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M8.53333 16L14.9333 21.3333L23.4667 10.6667' stroke='white' stroke-width='2'/></svg>");
   opacity: 1;
 }
@@ -66,12 +67,13 @@ input[name="toggle-token-1-default-checkbox"]:checked {
   cursor: pointer;
 }
 
-input[name="toggle-token-2-default-checkbox"] {
+input[name='toggle-token-2-default-checkbox'] {
   position: absolute;
   top: 0;
   left: 0;
   z-index: var(--vce-z-behind);
   appearance: none;
+  -webkit-appearance: none;
   box-sizing: content-box;
   block-size: 100%;
   inline-size: 100%;
@@ -84,12 +86,12 @@ input[name="toggle-token-2-default-checkbox"] {
   opacity: 0.7;
   transition: all var(--vce-animation-time-xs);
 }
-input[name="toggle-token-2-default-checkbox"]:is(:hover, :focus) {
+input[name='toggle-token-2-default-checkbox']:is(:hover, :focus) {
   outline: 0;
   box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
 }
 
-input[name="toggle-token-2-default-checkbox"]:checked {
+input[name='toggle-token-2-default-checkbox']:checked {
   background-image: url('data:image/svg+xml;utf8,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9999 8.53333V23.4667M8.5332 16H23.4665" stroke="white" stroke-width="2"/></svg>');
   opacity: 1;
 }
@@ -114,12 +116,13 @@ input[name="toggle-token-2-default-checkbox"]:checked {
   cursor: pointer;
 }
 
-input[name="toggle-token-3-default-checkbox"] {
+input[name='toggle-token-3-default-checkbox'] {
   position: absolute;
   top: 0;
   left: 0;
   z-index: var(--vce-z-behind);
   appearance: none;
+  -webkit-appearance: none;
   box-sizing: content-box;
   block-size: 100%;
   inline-size: 100%;
@@ -131,12 +134,12 @@ input[name="toggle-token-3-default-checkbox"] {
   cursor: pointer;
   transition: all var(--vce-animation-time-xs);
 }
-input[name="toggle-token-3-default-checkbox"]:is(:hover, :focus) {
+input[name='toggle-token-3-default-checkbox']:is(:hover, :focus) {
   outline: 0;
   box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
 }
 
-input[name="toggle-token-3-default-checkbox"]:checked {
+input[name='toggle-token-3-default-checkbox']:checked {
   background-image: url('data:image/svg+xml;utf8,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9999 8.53333V23.4667M8.5332 16H23.4665" stroke="white" stroke-width="2"/></svg>');
   background-color: var(--vce-clr-primary-surface);
 }
@@ -161,12 +164,13 @@ input[name="toggle-token-3-default-checkbox"]:checked {
   cursor: pointer;
 }
 
-input[name="toggle-token-4-default-checkbox"] {
+input[name='toggle-token-4-default-checkbox'] {
   position: absolute;
   top: 0;
   left: 0;
   z-index: var(--vce-z-behind);
   appearance: none;
+  -webkit-appearance: none;
   box-sizing: content-box;
   block-size: 100%;
   inline-size: 100%;
@@ -181,8 +185,8 @@ input[name="toggle-token-4-default-checkbox"] {
   cursor: pointer;
   transition: all var(--vce-animation-time-xs);
 }
-input[name="toggle-token-4-default-checkbox"]::before {
-  content: "";
+input[name='toggle-token-4-default-checkbox']::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -194,16 +198,16 @@ input[name="toggle-token-4-default-checkbox"]::before {
   opacity: 0;
   transition: all var(--vce-animation-time-xs);
 }
-input[name="toggle-token-4-default-checkbox"]:is(:hover, :focus) {
+input[name='toggle-token-4-default-checkbox']:is(:hover, :focus) {
   outline: 0;
   box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
 }
 
-input[name="toggle-token-4-default-checkbox"]:checked {
+input[name='toggle-token-4-default-checkbox']:checked {
   background-image: url('data:image/svg+xml;utf8,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9999 8.53333V23.4667M8.5332 16H23.4665" stroke="black" stroke-width="2"/></svg>');
   background-color: var(--vce-clr-tertiary-surface);
 }
-input[name="toggle-token-4-default-checkbox"]:checked::before {
+input[name='toggle-token-4-default-checkbox']:checked::before {
   transform: translate(50%, 0);
   opacity: 1;
 }
@@ -227,12 +231,13 @@ input[name="toggle-token-4-default-checkbox"]:checked::before {
   cursor: pointer;
 }
 
-input[name="toggle-token-5-default-checkbox"] {
+input[name='toggle-token-5-default-checkbox'] {
   position: absolute;
   top: 0;
   left: 0;
   z-index: var(--vce-z-behind);
   appearance: none;
+  -webkit-appearance: none;
   box-sizing: content-box;
   block-size: 100%;
   inline-size: 100%;
@@ -245,8 +250,8 @@ input[name="toggle-token-5-default-checkbox"] {
   opacity: 0.7;
   transition: all var(--vce-animation-time-xs);
 }
-input[name="toggle-token-5-default-checkbox"]::before {
-  content: "";
+input[name='toggle-token-5-default-checkbox']::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -261,15 +266,15 @@ input[name="toggle-token-5-default-checkbox"]::before {
   opacity: 0;
   transition: all var(--vce-animation-time-xs);
 }
-input[name="toggle-token-5-default-checkbox"]:is(:hover, :focus) {
+input[name='toggle-token-5-default-checkbox']:is(:hover, :focus) {
   outline: 0;
   box-shadow: 0 0 5px 3px var(--vce-clr-tertiary-surface);
 }
 
-input[name="toggle-token-5-default-checkbox"]:checked {
+input[name='toggle-token-5-default-checkbox']:checked {
   opacity: 1;
 }
-input[name="toggle-token-5-default-checkbox"]:checked::before {
+input[name='toggle-token-5-default-checkbox']:checked::before {
   transform: scale(1);
   opacity: 1;
 }
