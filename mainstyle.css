@@ -4,16 +4,19 @@ html {
   scroll-behavior: smooth;
   scrollbar-color: var(--vce-clr-primary-surface) transparent;
 }
-::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 16px;
   box-shadow: inset 0 0 3px 0 var(--vce-clr-tertiary-surface);
 }
-::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background: var(--vce-clr-primary-surface);
   border-radius: var(--vce-border-radius-pill);
 }
-::-webkit-scrollbar-thumb:hover {
+*::-webkit-scrollbar-thumb:hover {
   background: var(--vce-clr-primary-surface);
+}
+*::-webkit-scrollbar-corner {
+  background: var(--vce-clr-tertiary-surface);
 }
 
 *,
@@ -22,6 +25,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 :root {
   /*=============================================
@@ -80,7 +84,7 @@ html {
   --vce-fs-text-code: 0.8rem;
   --vce-fs-icon-text: 0.7rem;
   --vce-fs-tooltip: 0.7rem;
-  --vce-fs-status-modal: 0.8rem;
+  --vce-fs-status-modal: 1.2rem;
 
   /*----------  VanillaCssElements-font-weights  ----------*/
   --vce-fw-xl: 800;
@@ -148,10 +152,12 @@ section,
 main,
 header,
 footer {
-  padding-inline: var(--vce-plg);
+  padding-inline-end: var(--vce-plg);
+  padding-inline-start: var(--vce-plg);
 }
 header {
-  padding-block: var(--vce-plg);
+  padding-block-start: var(--vce-plg);
+  padding-block-end: var(--vce-plg);
 }
 section,
 main {
@@ -485,13 +491,14 @@ h1.section__title::after {
   justify-content: center;
   align-self: end;
   gap: --vce-gap-xs;
-  padding-block: calc(var(--vce-pxs) / 4);
+  padding: calc(var(--vce-pxs) / 4) 0;
   background: var(--vce-clr-secondary-surface);
 }
 
 .buttons-group button,
 .modal__buttons-group button {
   appearance: none;
+  -webkit-appearance: none;
   background: var(--vce-clr-secondary-surface);
   border: 0;
   height: 3rem;
@@ -521,29 +528,50 @@ h1.section__title::after {
   letter-spacing: 0.1em;
 }
 .modal__container {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: var(--vce-clr-modal-background);
   z-index: var(--vce-z-modal);
 }
 .modal__content {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: var(--vce-gap-md);
-  padding: 0 var(--vce-pmd) var(--vce-pmd);
+  top: 10%;
+  left: 50%;
   background: var(--vce-clr-container-background);
   border-radius: var(--vce-border-radius);
   max-width: var(--vce-container-max-size);
+  max-height: 900px;
   width: 70vw;
+  height: 80vh;
   transform: translateX(-50%);
+
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+.modal__outputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 70px);
+  width: 100%;
+  padding: var(--vce-pxs) var(--vce-pmd);
   overflow: hidden;
 }
+.modal__outputs > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
 .modal__buttons-group {
-  width: calc(100% + var(--vce-pmd) * 2);
+  width: 100%;
+  height: 60px;
   justify-content: space-between;
-  align-self: center;
-  padding: var(--vce-pxs) var(--vce-pmd);
+  align-items: center;
+  padding: calc(var(--vce-pxs) / 4) var(--vce-pmd);
 }
 .modal__buttons-group .close-modal > svg {
   display: flex;
@@ -558,19 +586,25 @@ h1.section__title::after {
 }
 
 .status-modal {
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   z-index: var(--vce-z-modal);
-  height: 30vmin;
-  width: 30vmin;
+  height: 15vmin;
+  max-height: 120px;
+  max-width: 600px;
+  width: 80vmin;
+  left: 50%;
+  bottom: 2%;
   padding: var(--vce-pxs);
   background: var(--vce-clr-secondary-surface);
   color: var(--vce-clr-secondary-top);
-  font-size: (--vce-fs-status-modal);
-  transform: translateY(-100%);
+  font-size: var(--vce-fs-status-modal);
+  transform: translateX(-50%);
+  border-radius: var(--vce-border-radius-round);
+  box-shadow: var(--vce-box-shadow-card);
 }
 
 .footer__container {
@@ -579,7 +613,8 @@ h1.section__title::after {
 }
 footer {
   background: var(--vce-clr-secondary-surface);
-  padding-block: var(--vce-pmd);
+  padding-block-start: var(--vce-pmd);
+  padding-block-end: var(--vce-pmd);
 }
 .footer__menu {
   display: flex;
@@ -687,6 +722,7 @@ footer svg {
     flex-direction: column;
     gap: 6px;
     appearance: none;
+    -webkit-appearance: none;
     background: transparent;
     border: 0;
     cursor: pointer;
@@ -793,7 +829,6 @@ footer svg {
     margin-inline-start: var(--vce-mlg);
   }
   .modal__content {
-    padding: 0 var(--vce-psm) var(--vce-psm);
     width: 90vw;
   }
 }
@@ -806,14 +841,28 @@ footer svg {
   main,
   header,
   footer {
-    padding-inline: var(--vce-pmd);
+    padding-inline-start: var(--vce-pmd);
+    padding-inline-end: var(--vce-pmd);
   }
   header {
-    padding-block: var(--vce-pmd);
+    padding-block-end: var(--vce-pmd);
+    padding-block-start: var(--vce-pmd);
   }
   section,
   main {
     padding-block-end: var(--vce-pmd);
+  }
+  .modal__outputs {
+    padding: var(--vce-pxs);
+  }
+
+  .modal__buttons-group {
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-end: var(--vce-pxs);
+    padding-inline-start: var(--vce-pxs);
   }
 }
 @media screen and (max-width: 500px) {
@@ -826,7 +875,8 @@ footer svg {
   main,
   header,
   footer {
-    padding-inline: var(--vce-psm);
+    padding-inline-start: var(--vce-psm);
+    padding-inline-end: var(--vce-psm);
   }
   .header__logo > svg {
     height: var(--vce-is-md);
@@ -862,10 +912,12 @@ footer svg {
   main,
   header,
   footer {
-    padding-inline: var(--vce-psm);
+    padding-inline-start: var(--vce-psm);
+    padding-inline-end: var(--vce-psm);
   }
   .element-container {
-    padding-inline: var(--vce-pxs);
+    padding-inline-start: var(--vce-pxs);
+    padding-inline-end: var(--vce-pxs);
   }
   .header__logo > svg {
     height: var(--vce-is-md);
@@ -888,8 +940,5 @@ footer svg {
     margin-inline-start: unset;
     grid-row: 4;
     margin-block-start: calc(-1 * var(--vce-gap-sm) - 1rem);
-  }
-  .modal__content {
-    padding: 0 var(--vce-pxs) var(--vce-pxs);
   }
 }

@@ -5,7 +5,7 @@
   position: relative;
   width: 100%;
 }
-input[name="input-1-input-default"] {
+input[name='input-1-input-default'] {
   width: 100%;
   font-size: var(--vce-fs-text-1);
   padding: var(--vce-pxs);
@@ -15,7 +15,7 @@ input[name="input-1-input-default"] {
   border-radius: var(--vce-border-radius);
   transition: border-color var(--vce-animation-time-xs);
 }
-label[for="input-1-input-default"] {
+label[for='input-1-input-default'] {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -26,17 +26,17 @@ label[for="input-1-input-default"] {
   color: var(--vce-clr-primary-surface);
   transition: all var(--vce-animation-time-xs);
 }
-input[name="input-1-input-default"]:not(:placeholder-shown)
-  + label[for="input-1-input-default"] {
+input[name='input-1-input-default']:not(:placeholder-shown)
+  + label[for='input-1-input-default'] {
   top: calc(-1 * 1rem / 0.8 / 2);
   background: var(--vce-clr-container-background);
   transform: scale(0.8);
 }
-input[name="input-1-input-default"]:focus {
+input[name='input-1-input-default']:focus {
   outline: 0;
   border-color: var(--vce-clr-tertiary-surface);
 }
-input[name="input-1-input-default"]:focus + label[for="input-1-input-default"] {
+input[name='input-1-input-default']:focus + label[for='input-1-input-default'] {
   color: var(--vce-clr-tertiary-surface);
 }
 /*=============================================
@@ -46,7 +46,7 @@ input[name="input-1-input-default"]:focus + label[for="input-1-input-default"] {
   position: relative;
   width: 100%;
 }
-input[name="input-2-input-default"] {
+input[name='input-2-input-default'] {
   width: 100%;
   font-size: var(--vce-fs-text-1);
   padding: var(--vce-pxs);
@@ -56,7 +56,7 @@ input[name="input-2-input-default"] {
   border-radius: var(--vce-border-radius);
   transition: border-color var(--vce-animation-time-xs);
 }
-label[for="input-2-input-default"] {
+label[for='input-2-input-default'] {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -70,8 +70,8 @@ label[for="input-2-input-default"] {
   color: var(--vce-clr-primary-surface);
   transition: all var(--vce-animation-time-xs);
 }
-input[name="input-2-input-default"]:not(:placeholder-shown)
-  + label[for="input-2-input-default"] {
+input[name='input-2-input-default']:not(:placeholder-shown)
+  + label[for='input-2-input-default'] {
   top: 100%;
   transform: translateY(-100%);
   background: var(--vce-clr-primary-surface);
@@ -80,12 +80,12 @@ input[name="input-2-input-default"]:not(:placeholder-shown)
   border-bottom-left-radius: var(--vce-border-radius);
   border-bottom-right-radius: var(--vce-border-radius);
 }
-input[name="input-2-input-default"]:focus {
+input[name='input-2-input-default']:focus {
   outline: 0;
   border-color: var(--vce-clr-tertiary-surface);
 }
-input[name="input-2-input-default"]:focus:placeholder-shown
-  + label[for="input-2-input-default"] {
+input[name='input-2-input-default']:focus:placeholder-shown
+  + label[for='input-2-input-default'] {
   color: var(--vce-clr-tertiary-surface);
 }
 /*=============================================
@@ -95,7 +95,7 @@ input[name="input-2-input-default"]:focus:placeholder-shown
   position: relative;
   width: 100%;
 }
-input[name="input-3-input-default"] {
+input[name='input-3-input-default'] {
   width: 100%;
   font-size: var(--vce-fs-text-1);
   padding: var(--vce-pxs);
@@ -105,7 +105,7 @@ input[name="input-3-input-default"] {
   border-radius: var(--vce-border-radius);
   transition: border-color var(--vce-animation-time-xs);
 }
-label[for="input-3-input-default"] {
+label[for='input-3-input-default'] {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -119,8 +119,8 @@ label[for="input-3-input-default"] {
   color: var(--vce-clr-primary-surface);
   transition: all var(--vce-animation-time-xs);
 }
-input[name="input-3-input-default"]:not(:placeholder-shown)
-  + label[for="input-3-input-default"] {
+input[name='input-3-input-default']:not(:placeholder-shown)
+  + label[for='input-3-input-default'] {
   left: 100%;
   transform: translate(-100%, -50%);
   background: var(--vce-clr-primary-surface);
@@ -128,12 +128,12 @@ input[name="input-3-input-default"]:not(:placeholder-shown)
   border-top-right-radius: var(--vce-border-radius);
   border-bottom-right-radius: var(--vce-border-radius);
 }
-input[name="input-3-input-default"]:focus {
+input[name='input-3-input-default']:focus {
   outline: 0;
   border-color: var(--vce-clr-tertiary-surface);
 }
-input[name="input-3-input-default"]:focus:placeholder-shown
-  + label[for="input-3-input-default"] {
+input[name='input-3-input-default']:focus:placeholder-shown
+  + label[for='input-3-input-default'] {
   color: var(--vce-clr-tertiary-surface);
 }
 /*=============================================
@@ -143,7 +143,7 @@ input[name="input-3-input-default"]:focus:placeholder-shown
   position: relative;
   width: 100%;
 }
-input[name="input-3-input-default"] {
+input[name='input-3-input-default'] {
   width: 100%;
   font-size: var(--vce-fs-text-1);
   padding: var(--vce-pxs);
@@ -153,7 +153,7 @@ input[name="input-3-input-default"] {
   border-radius: var(--vce-border-radius);
   transition: border-color var(--vce-animation-time-xs);
 }
-label[for="input-3-input-default"] {
+label[for='input-3-input-default'] {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -167,8 +167,8 @@ label[for="input-3-input-default"] {
   color: var(--vce-clr-primary-surface);
   transition: all var(--vce-animation-time-xs);
 }
-input[name="input-3-input-default"]:not(:placeholder-shown)
-  + label[for="input-3-input-default"] {
+input[name='input-3-input-default']:not(:placeholder-shown)
+  + label[for='input-3-input-default'] {
   left: 100%;
   transform: translate(-100%, -50%);
   background: var(--vce-clr-primary-surface);
@@ -176,11 +176,11 @@ input[name="input-3-input-default"]:not(:placeholder-shown)
   border-top-right-radius: var(--vce-border-radius);
   border-bottom-right-radius: var(--vce-border-radius);
 }
-input[name="input-3-input-default"]:focus {
+input[name='input-3-input-default']:focus {
   outline: 0;
   border-color: var(--vce-clr-tertiary-surface);
 }
-input[name="input-3-input-default"]:focus:placeholder-shown
-  + label[for="input-3-input-default"] {
+input[name='input-3-input-default']:focus:placeholder-shown
+  + label[for='input-3-input-default'] {
   color: var(--vce-clr-tertiary-surface);
 }

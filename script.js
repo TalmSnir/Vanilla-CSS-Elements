@@ -158,9 +158,9 @@ function copyElement(elementCss, elementHtml) {
     ? (statusModal.style.backgroundColor = 'red')
     : '';
   statusModal.innerHTML = `
-  <p>the element's html and css were copied ${copyStatus}</p>
+  <p>the element's html and css have been copied ${copyStatus}</p>
   `;
-  setModalPosition(statusModal);
+
   body.appendChild(statusModal);
   setTimeout(() => body.removeChild(statusModal), 3000);
 }
@@ -190,15 +190,15 @@ function createElementModal(elementCss, elementHtml) {
 close
 </button>
 </div>
-<div>
-<div>
+<div class="modal__outputs">
+<div >
 <h2>html</h2>
 <pre>
 <code class="language-html">
 ${elementHtmlText}
 </code>
 </pre></div>
-<div>
+<div >
 <h2>css</h2>
 <pre>
 <code class="language-css">
@@ -219,29 +219,8 @@ ${elementCss.replace(/;/gi, ';\n').replace(/{/gi, '{\n').replace(/}/gi, '}\n')}
     .forEach(codeBlock => Prism.highlightElement(codeBlock));
 
   const modalContent = modalContainer.querySelector('.modal__content');
-  setModalPosition(modalContent);
+
   setListenersToModal(modalContent, modalContainer, elementCss, elementHtml);
-}
-
-//sets the position of the watch-code modal to the center of the viewport or to the left bottom corner depending on the modal type
-function setModalPosition(modalContent) {
-  const scrolledBy = window.pageYOffset;
-  let [x, y] = modalContent.classList.contains('status-modal')
-    ? [0, window.innerHeight + scrolledBy]
-    : [body.clientWidth / 2, scrolledBy];
-  const bodyHeight = body.clientHeight;
-  const modalHeight = modalContent.clientHeight;
-  const heightOverflowIndicator = bodyHeight - (modalHeight + y);
-  //if there is an overflow of the modal- set the top of the modal higher on the page to prevent the overflow.
-  if (heightOverflowIndicator < 0) {
-    y = y + heightOverflowIndicator - 64;
-    if (y <= 0) {
-      y = 0;
-    }
-  }
-
-  modalContent.style.top = `${y}px`;
-  modalContent.style.left = `${x}px`;
 }
 
 //set listeners to the modal's copy and close buttons
@@ -435,21 +414,29 @@ window
 
 function toggleMenu() {
   this.classList.toggle('active');
+
   if (this.classList.contains('active')) {
-    const menu = this.nextElementSibling;
-    menu.addEventListener('click', e =>
-      e.target !== menu && !e.target.classList.contains('color-scheme')
-        ? this.classList.remove('active')
-        : ''
-    );
+    document.addEventListener('click', handleClickOutsideMenu);
+    menu.addEventListener('click', handleClickInsideMenu);
   }
 }
+function handleClickOutsideMenu(e) {
+  e.stopPropagation();
+  if (e.target != menuIcon && !menu.contains(e.target)) {
+    document.removeEventListener('click', handleClickOutsideMenu);
+    menuIcon.classList.remove('active');
+  }
+}
+function handleClickInsideMenu(e) {
+  e.stopPropagation();
+
+  if (e.target !== this && !e.target.classList.contains('color-scheme')) {
+    document.removeEventListener('click', handleClickOutsideMenu);
+    menu.removeEventListener('click', handleClickInsideMenu);
+    menuIcon.classList.remove('active');
+  }
+}
+
 const menuIcon = document.querySelector('.header__nav__menu-icon');
+menu = menuIcon.nextElementSibling;
 menuIcon.addEventListener('click', toggleMenu);
-//  constants:
-//  ELEMENTS_TYPES,CSS_CUSTOM_PROPERTIES,DARK_THEME_COLORS,LIGHT_THEME_COLORS
-
-//  global variables:
-//  elementsContainers,body,preferredColorScheme,themeBtn.
-
-//  functions:
