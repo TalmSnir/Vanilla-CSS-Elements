@@ -204,7 +204,7 @@ header {
   border-radius: var(--vce-border-radius);
 }
 .header__menu__link {
-  text-decoration: 0;
+  text-decoration: none;
   color: var(--vce-clr-primary-surface);
   text-transform: capitalize;
   font-size: var(--vce-fs-link);

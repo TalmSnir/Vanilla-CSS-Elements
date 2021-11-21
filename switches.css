@@ -34,7 +34,8 @@ input[name='switch-1-checkbox-default'] {
   position: relative;
 }
 input[name='switch-1-checkbox-default']:is(:hover, :focus) {
-  outline: 0;
+  outline: 2px solid var(--vce-clr-secondary-surface);
+  outline-offset: 4px;
 }
 input[name='switch-1-checkbox-default']::before {
   --thumb-size: var(--switch-block-size);
@@ -49,20 +50,7 @@ input[name='switch-1-checkbox-default']::before {
 input[name='switch-1-checkbox-default']:is(:hover, :focus)::before {
   box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
 }
-input[name='switch-1-checkbox-default']::after {
-  content: '';
-  position: absolute;
-  top: calc(var(--padding) * -2);
-  left: calc(var(--padding) * -2);
-  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
-  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
-  border: 2px solid var(--vce-clr-secondary-surface);
-  border-radius: var(--vce-border-radius-pill);
-  opacity: 0;
-}
-input[name='switch-1-checkbox-default']:focus::after {
-  opacity: 1;
-}
+
 input[name='switch-1-checkbox-default']:checked::before {
   transform: translateX(100%);
 }
@@ -229,25 +217,13 @@ input[name='switch-4-checkbox-default']::before {
   transition: all var(--vce-animation-time-sm);
 }
 input[name='switch-4-checkbox-default']:is(:hover, :focus) {
-  outline: 0;
+  outline: 2px solid var(--vce-clr-secondary-surface);
+  outline-offset: 4px;
 }
 input[name='switch-4-checkbox-default']:is(:hover, :focus)::before {
   box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
 }
-input[name='switch-4-checkbox-default']::after {
-  content: '';
-  position: absolute;
-  top: calc(var(--padding) * -2);
-  left: calc(var(--padding) * -2);
-  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
-  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
-  border: 2px solid var(--vce-clr-secondary-surface);
-  border-radius: var(--vce-border-radius-pill);
-  opacity: 0;
-}
-input[name='switch-4-checkbox-default']:focus::after {
-  opacity: 1;
-}
+
 input[name='switch-4-checkbox-default']:checked::before {
   transform: translateX(100%);
 }
@@ -302,25 +278,13 @@ input[name='switch-5-checkbox-default']::before {
   transition: all var(--vce-animation-time-sm);
 }
 input[name='switch-5-checkbox-default']:is(:hover, :focus) {
-  outline: 0;
+  outline: 2px solid var(--vce-clr-secondary-surface);
+  outline-offset: 4px;
 }
 input[name='switch-5-checkbox-default']:is(:hover, :focus)::before {
   box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
 }
-input[name='switch-5-checkbox-default']::after {
-  content: '';
-  position: absolute;
-  top: calc(var(--padding) * -2);
-  left: calc(var(--padding) * -2);
-  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
-  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
-  border: 2px solid var(--vce-clr-secondary-surface);
-  border-radius: var(--vce-border-radius-pill);
-  opacity: 0;
-}
-input[name='switch-5-checkbox-default']:focus::after {
-  opacity: 1;
-}
+
 input[name='switch-5-checkbox-default']:checked::before {
   transform: translateX(100%);
   background-image: url('data:image/svg+xml;utf8,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.59998 9.60001L22.4 22.4M9.59998 22.4L22.4 9.60001" stroke="hsl(177, 90%, 59%)" stroke-width="2"/></svg>');
@@ -381,25 +345,13 @@ input[name='switch-6-checkbox-default']::before {
   transition: all var(--vce-animation-time-sm);
 }
 input[name='switch-6-checkbox-default']:is(:hover, :focus) {
-  outline: 0;
+  outline: 2px solid var(--vce-clr-secondary-surface);
+  outline-offset: 4px;
 }
 input[name='switch-6-checkbox-default']:is(:hover, :focus)::before {
   box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
 }
-input[name='switch-6-checkbox-default']::after {
-  content: '';
-  position: absolute;
-  top: calc(var(--padding) * -2);
-  left: calc(var(--padding) * -2);
-  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
-  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
-  border: 2px solid var(--vce-clr-secondary-surface);
-  border-radius: var(--vce-border-radius-pill);
-  opacity: 0;
-}
-input[name='switch-6-checkbox-default']:focus::after {
-  opacity: 1;
-}
+
 input[name='switch-6-checkbox-default']:checked::before {
   transform: translateX(100%);
   background: var(--vce-clr-secondary-surface);
@@ -454,25 +406,13 @@ input[name='switch-7-checkbox-default']::before {
     var(--vce-animation-time-sm);
 }
 input[name='switch-7-checkbox-default']:is(:hover, :focus) {
-  outline: 0;
+  outline: 2px solid var(--vce-clr-secondary-surface);
+  outline-offset: 4px;
 }
 input[name='switch-7-checkbox-default']:is(:hover, :focus)::before {
   box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
 }
-input[name='switch-7-checkbox-default']::after {
-  content: '';
-  position: absolute;
-  top: calc(var(--padding) * -2);
-  left: calc(var(--padding) * -2);
-  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
-  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
-  border: var(--padding) solid var(--vce-clr-secondary-surface);
-  border-radius: var(--vce-border-radius-pill);
-  opacity: 0;
-}
-input[name='switch-7-checkbox-default']:focus::after {
-  opacity: 1;
-}
+
 input[name='switch-7-checkbox-default']:checked::before {
   transform: translateX(100%);
 }
@@ -517,7 +457,8 @@ input[name='switch-8-checkbox-default'] {
   transition: background-color var(--vce-animation-time-sm);
 }
 input[name='switch-8-checkbox-default']:is(:hover, :focus) {
-  outline: 0;
+  outline: 2px solid var(--vce-clr-secondary-surface);
+  outline-offset: 4px;
 }
 input[name='switch-8-checkbox-default']::before {
   --thumb-size: var(--switch-block-size);
@@ -532,20 +473,7 @@ input[name='switch-8-checkbox-default']::before {
 input[name='switch-8-checkbox-default']:is(:hover, :focus)::before {
   box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
 }
-input[name='switch-8-checkbox-default']::after {
-  content: '';
-  position: absolute;
-  top: calc(var(--padding) * -2);
-  left: calc(var(--padding) * -2);
-  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
-  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
-  border: 2px solid var(--vce-clr-secondary-surface);
-  border-radius: var(--vce-border-radius-pill);
-  opacity: 0;
-}
-input[name='switch-8-checkbox-default']:focus::after {
-  opacity: 1;
-}
+
 input[name='switch-8-checkbox-default']:checked::before {
   transform: translateX(100%);
 }
@@ -595,7 +523,8 @@ input[name='switch-9-checkbox-default'] {
   position: relative;
 }
 input[name='switch-9-checkbox-default']:is(:hover, :focus) {
-  outline: 0;
+  outline: 2px solid var(--vce-clr-secondary-surface);
+  outline-offset: 4px;
 }
 input[name='switch-9-checkbox-default']::before {
   --thumb-size: var(--switch-block-size);
@@ -610,20 +539,7 @@ input[name='switch-9-checkbox-default']::before {
 input[name='switch-9-checkbox-default']:is(:hover, :focus)::before {
   box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
 }
-input[name='switch-9-checkbox-default']::after {
-  content: '';
-  position: absolute;
-  top: calc(var(--padding) * -2);
-  left: calc(var(--padding) * -2);
-  inline-size: calc(var(--switch-inline-size) + var(--padding) * 6);
-  block-size: calc(var(--switch-block-size) + var(--padding) * 6);
-  border: 2px solid var(--vce-clr-secondary-surface);
-  border-radius: var(--vce-border-radius-pill);
-  opacity: 0;
-}
-input[name='switch-9-checkbox-default']:focus::after {
-  opacity: 1;
-}
+
 input[name='switch-9-checkbox-default']:checked::before {
   transform: translateX(100%);
 }

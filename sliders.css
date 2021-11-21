@@ -29,7 +29,8 @@ input[name='slider-1-range-default'] {
   position: relative;
 }
 input[name='slider-1-range-default']:focus {
-  outline: 0;
+  outline: 2px solid var(--vce-clr-secondary-surface);
+  outline-offset: 4px;
 }
 input[name='slider-1-range-default']:hover {
   opacity: 0.9;
@@ -67,24 +68,7 @@ input[name='slider-1-range-default']::-moz-range-thumb:hover {
   border: 3px solid var(--vce-clr-tertiary-surface);
   transform: scale(1.4);
 }
-input[name='slider-1-range-default']:is(:hover, :focus)::before {
-  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
-}
-input[name='slider-1-range-default']::after {
-  content: '';
-  position: absolute;
-  box-sizing: border-box;
-  top: calc(var(--padding) * -2);
-  left: calc(var(--padding) * -2);
-  inline-size: calc(100% + var(--padding) * 6);
-  block-size: calc(var(--slider-block-size) + var(--padding) * 6);
-  border: 2px solid var(--vce-clr-secondary-surface);
-  border-radius: var(--vce-border-radius-pill);
-  opacity: 0;
-}
-input[name='slider-1-range-default']:focus::after {
-  opacity: 1;
-}
+
 /*=============================================
 =            slider-2          =
 =============================================*/
@@ -115,8 +99,8 @@ input[name='slider-2-range-default'] {
   position: relative;
 }
 input[name='slider-2-range-default']:focus {
-  outline-offset: calc(var(--padding) * 4);
-  outline: 2px solid var(--vce-clr-primary-surface);
+  outline: 2px solid var(--vce-clr-secondary-surface);
+  outline-offset: 4px;
 }
 input[name='slider-2-range-default']:hover {
   opacity: 0.9;
@@ -154,9 +138,7 @@ input[name='slider-2-range-default']::-moz-range-thumb:hover {
   border: 3px solid var(--vce-clr-tertiary-surface);
   transform: scale(1.4);
 }
-input[name='slider-2-range-default']:is(:hover, :focus)::before {
-  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
-}
+
 /*=============================================
 =            slider-3          =
 =============================================*/
@@ -189,7 +171,8 @@ input[name='slider-3-range-default'] {
   position: relative;
 }
 input[name='slider-3-range-default']:focus {
-  outline: 0;
+  outline: 2px solid var(--vce-clr-secondary-surface);
+  outline-offset: 4px;
 }
 input[name='slider-3-range-default']:hover {
   opacity: 0.9;
@@ -227,24 +210,7 @@ input[name='slider-3-range-default']::-moz-range-thumb:hover {
   border: 3px solid var(--vce-clr-tertiary-surface);
   transform: scale(1.4);
 }
-input[name='slider-3-range-default']:is(:hover, :focus)::before {
-  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
-}
-input[name='slider-3-range-default']::after {
-  content: '';
-  position: absolute;
-  box-sizing: border-box;
-  top: calc(var(--padding) * -2);
-  left: calc(var(--padding) * -2);
-  inline-size: calc(100% + var(--padding) * 6);
-  block-size: calc(var(--slider-block-size) + var(--padding) * 6);
-  border: 2px solid var(--vce-clr-secondary-surface);
-  border-radius: var(--vce-border-radius-pill);
-  opacity: 0;
-}
-input[name='slider-3-range-default']:focus::after {
-  opacity: 1;
-}
+
 output {
   font-size: var(--vce-fs-label);
   color: currentColor;
@@ -284,7 +250,8 @@ input[name='slider-4-range-default'] {
   position: relative;
 }
 input[name='slider-4-range-default']:focus {
-  outline: 0;
+  outline: 2px solid var(--vce-clr-secondary-surface);
+  outline-offset: 4px;
 }
 input[name='slider-4-range-default']:hover {
   opacity: 0.9;
@@ -321,23 +288,4 @@ input[name='slider-4-range-default']::-webkit-slider-thumb:hover {
 }
 input[name='slider-4-range-default']::-moz-range-thumb:hover {
   border: 3px solid var(--vce-clr-tertiary-surface);
-}
-input[name='slider-4-range-default']:is(:hover, :focus)::before {
-  box-shadow: 0 0 0 0.3rem var(--vce-clr-tertiary-surface);
-}
-input[name='slider-4-range-default']::after {
-  content: '';
-  position: absolute;
-  box-sizing: border-box;
-  top: calc(var(--padding) * -2);
-  left: calc(var(--padding) * -2);
-  inline-size: calc(100% + var(--padding) * 6);
-  block-size: calc(var(--slider-block-size) + var(--padding) * 6);
-  border: 2px solid var(--vce-clr-secondary-surface);
-  border-radius: var(--vce-border-radius-pill);
-  opacity: 0;
-  z-index: var(--vce-z-behind);
-}
-input[name='slider-4-range-default']:focus::after {
-  opacity: 1;
 }
