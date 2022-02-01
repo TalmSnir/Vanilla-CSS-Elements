@@ -1,8 +1,6 @@
 # Vanilla-CSS-Elements
 
-## status 
 
-![branch status](https://img.shields.io/badge/status-in%20progress-brightgreen)
 
 ![repo cover art](https://raw.githubusercontent.com/TalmSnir/Vanilla-CSS-Elements/main/socialpreview.png )
 
